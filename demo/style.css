@@ -1,0 +1,19 @@
+﻿@charset utf-8;
+*{margin:0 auto;padding:0;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}
+body{font:12px/1.5em "Microsoft YaHei",Tahoma,Arial,STHeiti,sans-serif;color:#505050;}
+html{width:100%;height:100%;}
+img{border:none;}
+ul,ol,li{list-style:none outside none;padding:0;margin:0;}
+a{text-decoration:none;color:#4e555a;}
+a:hover{text-decoration:none;}
+/*广告*/
+
+.focus {width:710px; height:400px;  position:relative; overflow: hidden;}
+.focus .tab-nav {height: 25px;position: absolute; z-index:10;right:10px;bottom:8px;text-align: center; width: 100% }
+.focus .tab-nav div {cursor: pointer;display: inline-block;height: 20px;cursor: pointer;margin:0 10px;position: relative;width: 20px;box-shadow: 0 1px 1px rgba(255, 255, 255, 0.9),0 1px 1px rgba(0, 0, 0, 0.1),0 0 0 3px rgba(255, 255, 255, 0.9);border-radius: 50%;-webkit-transition: all 0.2s ease 0;-moz-transition: all 0.2s ease 0;-o-transition: all 0.2s ease 0;transition: all 0.2s ease 0;}
+.focus .tab-nav div.on {cursor: pointer; width:20px;height:20px;background:#FFF;}
+
+.focus .prev { position: absolute; display: none; left: 10px;  top:120px;width:45px; height:100px; position:absolute; z-index: 10; background:url(/statics/images/btn.png) no-repeat left top; cursor:pointer;}
+.focus .next {position: absolute; display: none; right: 10px; top:120px; width:45px; height:100px; position:absolute; z-index: 10; background:url(/statics/images/btn.png) no-repeat right top; cursor:pointer;}
+

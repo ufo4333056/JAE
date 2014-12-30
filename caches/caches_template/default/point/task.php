@@ -1,0 +1,18 @@
+<?php defined('IN_JAE') or exit('No permission resources.'); ?><?php  
+include template('content','head');
+?>
+<link href="/statics/css/prize.css" rel="stylesheet" type="text/css" />
+<div class="page-rules page-content">
+    <div class="head" style="background:<?php echo  $data['bg_color']?>">
+        <div class="head-logo"><img src="<?php echo $data['bg_img'] ?>">
+        </div>
+    </div>
+    <div class="bcontent-wrap">
+        <div class="rules-content">
+         
+            <div class="rules-list">
+                <?php echo htmlspecialchars_decode($data['task']);?>
+            </div>
+        </div>
+    </div>
+</div>

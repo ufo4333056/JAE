@@ -1,0 +1,59 @@
+!!com.taobao.tae.config.domain.Config
+
+#应用元信息
+title: 特色中国
+description: 特色中国
+
+version: 1
+language: php
+author: QQ182050367
+thumbnail: /author
+
+#type: 1 tae 模块 2 独立站点
+type: 2
+
+#全局css的配置
+#css: /assets/css/main1.css
+
+
+#首页
+index: /index.php
+
+#管理首页
+
+# 关闭首页缓存
+disableIndexCache:  true
+
+#http请求配置
+urls:
+#前端页面
+- {handler: /view/front/index.php, url: /index}
+- {handler: /view/front/list_goods.php, url: /listGoods}
+- {handler: /view/front/view_article.php, url: /viewArticle}
+- {handler: /view/front/apply.php, url: /apply}
+- {handler: /view/front/list_shop.php, url: /listShop}
+
+
+#卖家管理页面
+#- {handler: /view/admin/index.php, url: /admin}
+#- {handler: /view/admin/itemlist.php, url: /itemlist}
+#- {handler: /view/admin/infolist.php, url: /infolist}
+#- {handler: /view/admin/vote_item_action.php, url: /voteItemAction}
+
+
+#远程服务请求配置
+#services:
+#- {serviceName: vote_service ,handler: /services/vote_service.php }
+
+
+
+#安全和权限配置
+security:
+#- {url: /view/admin,role: developer }
+- {url: /view/admin,role: developer }
+- {url: /admin,role: developer }
+- {url: /admin.php,role: developer }
+#- {url: /report,role: anonymous  }
+- {url: /view/front,role: anonymous }
+#- {url: /index.php?m=member,role: shopcustomer }
+- {url: /member.php,role: shopcustomer }

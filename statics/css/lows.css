@@ -1,0 +1,35 @@
+.lows-banner { position: absolute; top: 100px; z-index: 9999; display: none; width: 100%; height: 600px; overflow: hidden ; }
+.lows-banner li, .lows-banner ul { width: 100% }
+.lows-banner .pic1 { background: url(http://img03.taobaocdn.com/tps/i3/T1kMllFlFgXXcFC5g2-10-600.png) repeat-x 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img03.taobaocdn.com/tps/i3/T1kMllFlFgXXcFC5g2-10-600.png', sizingMethod='scale')
+}
+.lows-banner .pic2 { background: url(http://img04.taobaocdn.com/tps/i4/T1iBNxFgteXXcFC5g2-10-600.png) repeat-x 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img04.taobaocdn.com/tps/i4/T1iBNxFgteXXcFC5g2-10-600.png', sizingMethod='scale')
+}
+.lows-banner .pic3 { background: url(http://img01.taobaocdn.com/tps/i1/T11AxyFaRcXXcFC5g2-10-600.png) repeat-x 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img01.taobaocdn.com/tps/i1/T11AxyFaRcXXcFC5g2-10-600.png', sizingMethod='scale')
+}
+.lows-banner .banner-pic { position: relative; width: 990px; height: 600px; margin: 0 auto; overflow: hidden }
+.lows-banner .banner-pic a { display: block; width: 100%; height: 600px; }
+.lows-banner .pic1 .banner-pic {  _background: 0 0; )
+}
+.lows-banner .pic2 .banner-pic {  _background: 0 0; )
+}
+.lows-banner .pic3 .banner-pic {  _background: 0 0; )
+}
+.lows-banner .trigger-wrap { position: relative; z-index: 99; width: 990px; height: 0; margin: 0 auto }
+.lows-banner .close { position: absolute; right: -80px; top: 25px; width: 42px; height: 42px; background: url(http://img02.taobaocdn.com/tps/i2/T1O9lOFgpaXXauAxTf-42-42.png) no-repeat 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img02.taobaocdn.com/tps/i2/T1O9lOFgpaXXauAxTf-42-42.png', sizingMethod='crop');
+cursor: pointer }
+.lows-banner .next, .lows-banner .prev { position: absolute; top: 300px; width: 43px; height: 46px; cursor: pointer ; display: none; }
+.lows-banner .prev { left: -100px; background: url(http://img03.taobaocdn.com/tps/i3/T171VNFf8aXXbYzTrf-43-46.png) no-repeat 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img03.taobaocdn.com/tps/i3/T171VNFf8aXXbYzTrf-43-46.png', sizingMethod='crop')
+}
+.lows-banner .next { right: -100px; background: url(http://img02.taobaocdn.com/tps/i2/T1G5VPFfFXXXbYzTrf-43-46.png) no-repeat 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img02.taobaocdn.com/tps/i2/T1G5VPFfFXXXbYzTrf-43-46.png', sizingMethod='crop')
+}
+.lows-banner .lows-trigger { position: absolute; top: 560px; right: -80px }
+.lows-banner .lows-trigger li { float: left; width: 21px; height: 21px; margin-left: 15px; background: url(http://img03.taobaocdn.com/tps/i3/T1j_xxFo0cXXX9g2ba-21-21.png) no-repeat 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img03.taobaocdn.com/tps/i3/T1j_xxFo0cXXX9g2ba-21-21.png', sizingMethod='crop');
+cursor: pointer }
+.lows-banner .lows-trigger li.active { background: url(http://img04.taobaocdn.com/tps/i4/T1CRBxFeXdXXX9g2ba-21-21.png) no-repeat 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img04.taobaocdn.com/tps/i4/T1CRBxFeXdXXX9g2ba-21-21.png', sizingMethod='crop')
+}
+.lows-banner .btn-close { position: absolute; top: 400px; right: 120px; width: 174px; height: 51px; cursor: pointer; z-index: 99; background: url(http://img03.taobaocdn.com/tps/i3/T1EyXQFeRbXXcKKfDi-174-51.png) no-repeat 0 0; _background: 0 0; _filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://img03.taobaocdn.com/tps/i3/T1EyXQFeRbXXcKKfDi-174-51.png', sizingMethod='crop')
+}
+
+
+
+.trigger-wrap a { display: block; width: 100%; height: 100% }

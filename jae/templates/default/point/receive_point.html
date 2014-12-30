@@ -1,0 +1,56 @@
+<?php  
+include template('content','head');
+?>
+<link href="/statics/css/member.css" rel="stylesheet" type="text/css" />
+<div class="blank"></div>
+<div class="wrap">
+  <dl class="ui-tab clearfix" id="">
+    <dt>领取积分</dt>
+    <dd data-type="all" class="j_nativeHistory all <?php if($receive==0) echo "select"?> " data-template=""><a href="/index.php?m=point&c=index&a=receive_point&receive=0">未领取的宝贝</a></dd>
+    <dd data-type="income" class="j_nativeHistory income  <?php if($receive==1) echo "select"?>" data-template="/point/detail/income"><a href="/index.php?m=point&c=index&a=receive_point&receive=1 ">已经领取的宝贝</a></dd>
+    <!-- <dd data-type="used" class="j_nativeHistory used  <?php if($trad=='used') echo "select"?>" data-template="/point/detail/used"><a href="/index.php?m=point&c=index&a=sign&trad=used">积分支出</a></dd>  -->
+  <!-- <dd data-type="expired" class="j_nativeHistory expired" data-template="/point/detail/expired"><a href="/index.php?m=point&c=index&a=point_task" target="_blank">积分任务说明</a></dd> -->
+     <!-- <dd data-type="freezed" class="j_nativeHistory freezed" data-template="/point/detail/freezed">冻结积分</dd>-->
+  </dl>
+  <div class="border">
+    <div class="pd20">
+      <div class="content">
+        <div id="J_pointSummary">
+          <div class="summary clearfix">
+            <div class="item valid"><span class="desc">可用的积分</span><span class="point" style="color:#C00"><?php echo $memberinfo['point']?></span></div>
+            <div class="item expired-soon"><span class="desc">已经消耗的积分</span><span class="point"><?php if($pointeds['point'])echo $pointeds['point']; else echo 0 ?></span><span class="date"><!--2014年12月31日--></span></div>
+            <div class="item exchange"><?php echo $msg?><a href="/index.php?m=point&c=index&a=sign" >签到 赢积分</a></div>
+          </div>
+        </div>
+        <!-- point .summary END -->
+        <div class="detail">
+          <div class="masthead clearfix"><span class="why">消费项目</span><span class="what">消费费用</span><span class="when" style="width:200px;">日期</span><span class="what">可领取积分</span><span class="notes">领取</span></div>
+          <div id="J_pointDetail">
+            <ul class="item-list" id="J_item-list">
+            
+            <?php foreach ($data as $v){?>
+              <li class="item clearfix">
+                <div class="why"><a class="title" target="_blank" href="http://item.taobao.com/item.htm?id=<?php echo $v['auction_id']?>"><?php echo $v['auction_title']?></a><span class="order-number">编号：<?php echo $v['id']?></span></div>
+                <div class="what"><span class=" plus"><?php echo $v['paid_fee']/100 ?></span></div>
+                <div class="when" style="width:200px;"><?php echo date('Y-m-d H:i:s',$v['pub_time'])?></div>
+                <div class="what"><span class=" plus"><?php echo floor($v['paid_fee']/100); ?></span></div>
+                <div class="notes"><span class="<?php if($v['receive']==0) echo "btn_receive"; else echo "btn_received" ; ?>"><a href="<?php if($v['receive']==0) echo "/index.php?m=point&c=index&a=receive&id=".$v['id']; else echo "" ; ?>"><?php if($v['receive']==0) echo "领取"; else echo  "已经领取";?></a></span></div>
+              </li>
+              <?php }?>
+              
+            </ul>
+          </div>
+          <div id="J_pointError" class="hidden error"></div>
+          <div id="J_pointPager" class="pages">
+            <?php echo $pages;?>
+          </div>
+        </div>
+        <!-- point .detail END --></div>
+      <div class="blank"></div>
+      <div class="m_main"> </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+<div class="blank"></div>

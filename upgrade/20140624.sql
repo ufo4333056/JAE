@@ -1,0 +1,20 @@
+DROP TABLE IF EXISTS site_config ;
+DROP TABLE IF EXISTS jae_seckill_person;
+CREATE TABLE `jae_seckill_person` (
+	`id` INT(8) NOT NULL AUTO_INCREMENT,
+	`userid` INT(8) UNSIGNED NOT NULL,
+	`username` VARCHAR(255) NOT NULL,
+	`goodsid` INT(8) UNSIGNED NULL DEFAULT NULL,
+	`date` DOUBLE UNSIGNED NOT NULL,
+	`regdate` INT(10) UNSIGNED NULL DEFAULT NULL,
+	`begin_time` INT(10) UNSIGNED NULL DEFAULT NULL,
+	`end_time` INT(10) UNSIGNED NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+ENGINE=MyISAM
+AUTO_INCREMENT=10;
+
+
+
+UPDATE jae_site SET date='20140624' ;
+UPDATE jae_site SET version='139';

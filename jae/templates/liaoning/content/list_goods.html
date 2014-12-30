@@ -1,0 +1,46 @@
+<?php include template('content','head');?>
+<!-- 商品列表开始 -->
+<?php $this->goods_type_db= jae_base::load_model('goods_type_model');
+
+    $v=$this->goods_type_db->get_one("typeid = $category_id");   ?>
+<div style="background:#e7eded">
+ <div style="width:1190px; height:620px;  margin:0 auto; position:relative">
+<div style="width:1920px; position:absolute; left:-365px; top:0px;height:620px;  overflow:hidden;"> <img src="<?php echo $v['description']; ?>"></div></div>
+
+<div class="wrap">
+  <div class="good_list">
+    <ul>
+      <?php 
+     
+      $db= jae_base::load_model('goods_model');
+      $data=$db->listinfo($where,$order = 'id DESC',$page, $pages = '30');   
+      $pages=$db->pages;
+
+
+      foreach($data as $goods){; ?>
+      <li>
+        <div class="goods-block"> <a class="pic" target="_blank" href="<?php echo $goods['detail_url']; ?>"> <img class="height-aware" width="280" height="280" src="<?php echo $goods['pic_url']; ?>">
+          <div class="cover" style="bottom: -35px; "><?php echo $goods['title']; ?></div>
+          </a>
+          <div class="bottom">
+          <a  style="display:block" target="_blank" href="<?php echo $goods['detail_url']; ?>"> 
+           <span class="price">辽宁馆</span>
+           </a> 
+           
+            
+          </div>
+        </div>
+      </li>
+      <?php }?>
+    </ul>
+  </div>
+</div>
+ 
+    <!-- 列表分页 -->
+	<div style="clear:both;"></div>
+    <div class="wrap pages">
+       
+            <?php echo $pages; ?>       
+    </div>
+</div>
+<?php include template('content','foot');?>

@@ -1,0 +1,29 @@
+<?php include template('content','head'); ?>
+<link href="/statics/css/apply.css" rel="stylesheet" type="text/css" />
+<div class="blank"></div>
+<div class="wrap">
+  <dl class="ui-tab clearfix" id="">
+    <dt>商品管理</dt>
+    <dd data-type="all" class="j_nativeHistory all <?php    if(ROUTE_A=='goods_apply') echo "select"?> "><a href="/index.php?m=member&c=index&a=goods_apply&manage=all">活动报名</a></dd>
+    <dd data-type="all" class="j_nativeHistory all <?php if($manage=='pass') echo "select"?> " ><a href="/index.php?m=member&c=index&a=goods_manage&manage=pass">已通过</a></dd>
+    <dd data-type="income" class="j_nativeHistory income  <?php if($manage=='check') echo "select"?>" ><a href="/index.php?m=member&c=index&a=goods_manage&manage=check ">审核中</a></dd>
+    <dd data-type="used" class="j_nativeHistory used  <?php if($manage=='refuse') echo "select"?>" ><a href="/index.php?m=member&c=index&a=goods_manage&manage=refuse">被拒绝</a></dd>
+  <!-- <dd data-type="expired" class="j_nativeHistory expired  <?php    if(ROUTE_A=='apply_task') echo "select"?>" ><a href="/index.php?m=member&c=index&a=apply_task">报名条件</a></dd> -->
+     <!-- <dd data-type="freezed" class="j_nativeHistory freezed" data-template="/point/detail/freezed">冻结积分</dd>-->
+  </dl>
+  
+  
+    <div class="border">
+    <div class="pd20">
+      <div class="content">
+      <?php echo block(11)?>
+      
+      
+      </div>
+      </div>
+      </div>
+  
+  <div class="clear"></div>
+</div>
+
+

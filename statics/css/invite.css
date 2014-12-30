@@ -1,0 +1,36 @@
+@charset "gb2312";
+/* CSS Document */
+.page_content {background:url(/statics/images/invite_bg.jpg) no-repeat center 0px; height: 900px;}
+.invite_content { width: 1190px; margin: 0 auto; position: relative;}
+.invite_copy H2{ color: #FFF; padding: 10px 0px; }
+.invite_copy {position: absolute; width: 780px; height: 120px; left: 230px; top: 140px;}
+.invite_copy textarea{ display: block; width: 680px; border: none; border-radius: 10px; padding: 15px; font-size: 14px; line-height: 28px; }
+
+.page_main { background:#fff; height:1600px; width:1190px; margin: 0 auto; font-family:microsoft yahei;}
+.add_point h1 { font-size:40px; float:left; line-height:100px; width:200px; }
+.add_point .add_sort { float:left; width:900px; background:url(/statics/images/invite_des_bg.png) no-repeat; }
+
+
+.add_point .add_sort li { float:left; padding-top:80px; width:140px; text-align:center; font-size:16px; font-weight:bold	}
+
+
+
+.minus_point h1 { font-size:40px; float:left; line-height:100px; width:200px; }
+.minus_point .minus_sort { float:left; width:900px; background:url(/statics/images/invite_des_bg.png) 0 -120px  no-repeat; }
+
+
+.minus_point .minus_sort li { float:left; padding-top:80px; width:140px; text-align:center; font-size:16px; font-weight:bold	}
+
+.sort1 { }
+
+
+
+
+
+
+
+
+
+
+
+

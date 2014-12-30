@@ -1,0 +1,154 @@
+<?php include template('content','head');?>
+
+<div class="blank"></div>
+
+<div class="xf-layout xf-mb">
+
+
+	<!-- 两栏布局 -->
+	<div class="xf-m622s288">
+		<div class="xf-main">
+			<div class="xf-wrap">
+
+				<!-- 报名表单 -->
+				<div class="xf-form">
+                    <div style="color: orange; text-align: center; padding-bottom: 10px;font-size: 20px;">
+                        <?php echo $createMessage; ?>
+                    </div>
+                    
+                    <form name="form1" method="post">
+                        <div class="f-itm">
+                            <label class="f-label" for="">商品ID :</label>
+                            <input class="f-text" name="num_iid" type="text" style="width:140px;" />
+                            <input name="dopost" type="hidden" value="caiji"/>
+                            <button class="f-btn" type="submit">获取商品信息</button>
+                        </div>
+                    </form>
+                    <form name="form2" method="post">
+						<!-- 获取后出现下面的f-show -->
+						<div class="f-show">
+						<div style=" float:left">
+									
+                                    <img src="<?php echo $pic_url; ?>" width="200" height="200" />
+                                    
+                          </div>          
+                                    
+                                    <table cellspacing="0" cellpadding="0" border="0" width="430">
+								
+								<tr>
+									<th width="90">商品链接：</th>
+                                    <td><?php echo $detail_url; ?></td>
+								</tr>
+								<tr>
+									<th>是否包邮：</th>
+                                    <td><em><?php if($freight_payer=='seller') echo '是';elseif($freight_payer=='buyer') echo '否'; ?></em></td>
+								</tr>
+								<tr>
+									<th>店家昵称：</th>
+									<td><?php echo $nick;?></td>
+								</tr>
+								<tr>
+									<th>商品原价：</th>
+									<td>￥<?php echo $price;?></td>
+								</tr>
+								<tr>
+									<th>库存数量：</th>
+                                    <td><?php echo $num; ?>件</td>
+								</tr>
+								
+							</table>
+						</div>
+                        <div style="margin-left:80px; font-size:16px; line-height:22px;  margin-bottom:20px; margin-top:10px; font-weight:bold;">报名商品页面必须悬挂本馆BANNER，悬挂教程：<u><a style="color:#FF0000;" href="http://bangpai.taobao.com/group/thread/14715437-285354669.htm" target="_blank">点我查看</a></u></div>
+						<div class="f-itm">
+							<label class="f-label" for="">商品分类 :</label>
+							<select name="category_id">
+								<option value="0">无分类</option>
+                                <?php foreach($categoryArr as $catId=>$catName){; ?>
+                                <option value="<?php echo $catId; ?>"><?php echo $catName; ?></option>
+                                    <?php }; ?>
+							</select>
+							<em>可改</em>
+						</div>
+                       <div class="f-itm">
+							<label class="f-label" for="">所属频道 :</label>
+							<select name="pindao_id">
+								<option value="0">无频道</option>
+                                <?php foreach($pindaoArr as $pindaoId=>$pindaoName){; ?>
+                                <option value="<?php echo $pindaoId; ?>"><?php echo $pindaoName; ?></option>
+                                    <?php }; ?>
+							</select>
+                            <em>可改</em>
+					  </div>
+                        <div class="f-itm">
+                            <label class="f-label" for="">促销时间 :</label>
+                            <input name="begin_time[<?php echo $row['id'] ?>]" class="kg_datePicker  input-text"
+                                                data-config='{"isHoliday": false,
+                                                "minDate" :"<?php echo date('Y-m-d', time() - 604800); ?>","finalTriggerNode" : "kg_datePicker  input-text", "finalTriggerMinDate" : "2013-04-22"}'
+                                                type="text"
+                                                value="<?php echo date('Y-m-d', $begin_time); ?>"/>
+                            至
+                            <input name="end_time" class="kg_datePicker  input-text" type="text" 
+                                                value="<?php echo date('Y-m-d', $end_time); ?>"/>
+                            <em>总时间不超过7天</em>
+                        </div>
+                      
+                        <div class="f-itm">
+							<label class="f-label" for="">商品主图 :</label>
+                            <input class="f-text" name="pic_url" type="text" style="width:350px;" value="<?php echo $pic_url; ?>" />
+							<em>必改*</em>
+							<div style="color:#999999">（要求图片高清、无文字和水印、大于230*230的正方形，最好是白底图）</div>
+						</div>
+						<div class="f-itm">
+							<label class="f-label" for="">*商品标题 :</label>
+                            <input class="f-text" name="title" type="text" style="width:350px;" value="<?php echo $title; ?>" />
+							<em>必改*</em>
+						</div>
+                        <div class="f-itm">
+							<label class="f-label" for="">*商品特价 :</label>
+                            <input class="f-text" name="coupon_price" type="text" style="width:350px;" value="<?php echo $coupon_price; ?>" />
+							<em>必改*</em>
+							<div style="color:#999999">（审核时发现宝贝页的折扣价与商品特价不符时不予通过，请报名后立刻调整折扣价）</div>
+						</div>
+						<div class="f-itm">
+							<label class="f-label" for="">卖点描述 :</label>
+							<textarea name="description" class="f-textarea" style="width:366px;height:150px;"></textarea>
+						</div>
+						<div class="f-itm">
+                            <input name="num_iid" type="hidden" value="<?php echo $num_iid; ?>"/>
+                            <input name="detail_url" type="hidden" value="<?php echo $detail_url; ?>"/>
+                            <input name="freight_payer" type="hidden" value="<?php echo $freight_payer; ?>"/>
+                            <input name="nick" type="hidden" value="<?php echo $nick; ?>"/>
+                            <input name="price" type="hidden" value="<?php echo $price; ?>"/>
+                            <input name="num" type="hidden" value="<?php echo $num; ?>"/>
+                            <input name="pic_url" type="hidden" value="<?php echo $pic_url; ?>"/>
+                            <input name="dopost" type="hidden" value="create"/>
+							<button class="f-submit" type="submit">提交审核</button>                    <div style="color: orange; margin-top:20px;font-size: 20px;">
+                        <?php echo $createMessage; ?>
+                    </div>
+						</div>
+					</form>
+				</div>
+				<!-- /报名表单 -->
+
+			</div>
+		</div>
+		<div class="xf-sub">
+
+			<!-- 公告 -->
+			<div class="xf-box">
+				<div class="notice">
+					<h2>报名公告</h2>
+					<div class="cnt">
+                         <?php echo block(35);?>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 特价推荐 -->
+			
+		</div>
+	</div>
+	<!-- /两栏布局 -->
+</div>
+<?php include template('content','foot');?>

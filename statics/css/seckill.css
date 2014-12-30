@@ -1,0 +1,46 @@
+@charset "gb2312";
+.normal-pic-wrapper { width: 328px; overflow: hidden; }
+.normal-pic-wrapper .normal-pic { position: relative; }
+.detail-status { color: #676767; text-align: center; width: 458px; margin-left: -7px; }
+.floatleft { float: left!important; }
+
+.clear {clear: both;}
+.detail-main { padding: 20px; background: #fff; border-radius: 5px; margin: 0px auto; width: 800px;}
+.detail-status .main-box { width: 452px; height: 300px; padding: 6px 3px 0; position: relative; margin-left: 5px;}
+.detail-status .main-box .name-box { max-height: 54px; overflow: hidden; margin-bottom: 3px; }
+.detail-status .main-box .name { color: #333; font-weight: 400; letter-spacing: 0.5px; font-size: 18px; }
+.detail-status .main-box .name { color: #333; margin-bottom: 6px; text-align: left; line-height: 26px; word-break: break-all; font-weight: 400; letter-spacing: .5px; font-size: 18px; }
+.detail-status .main-box .description { color: #482A00; font-size: 14px; border-color: #FFE6CB; letter-spacing: 0.5px; background-color: #FFFDF5; }
+.detail-status .main-box .description { line-height: 20px; text-align: left; position: relative; border: 1px dashed #FFE6CB; padding: 5px 8px; color: #482A00; font-size: 14px; letter-spacing: .5px; background-color: #FFFDF5; word-break: break-all; }
+.detail-status .main-box .multi-city { display: inline; }
+.detail-status .avil .status-banner { background: url(/statics/images/T1xUprFz8nXXcqEkHX-550-1836.png) no-repeat 0 0; }
+.detail-status .main-box .status-banner { display: block; width: 482px; height: 70px; line-height: 70px; margin-top: 10px; margin-left: -8px; position: relative; }
+.detail-status .main-box .status-banner .currentPrice { color: white; font-family: Arial; font-weight: 700; font-size: 42px; line-height: 76px; margin-left: 10px; margin-right: 0; text-align: center; width: 230px; height: 70px; }
+.detail-status .main-box .status-banner .floatleft { height: 70px; overflow: hidden; }
+.detail-status .avil .status-banner .discount { color: #D21E3C; background: url(http://gtms01.alicdn.com/tps/i1/T18aTIFnFdXXb2fuHk-62-25.png) no-repeat center; }
+.detail-status .main-box .status-banner .discount { font-size: 18px; font-weight: 700; width: 57px; padding-left: 5px; text-align: center; height: 25px; line-height: 25px; position: relative; top: 12px; }
+.detail-status .main-box .status-banner .originPrice { font-size: 16px; color: white; position: relative; top: -7px; margin-right: 0; }
+.detail-status .main-box .buyaction { width: 470px; height: 68px; display: block; position: absolute; top: 1px; left: 0; cursor: default; border: 0; font-size: 0; line-height: 0; color: transparent; text-indent: -999px; cursor: pointer; background: transparent url(http://gtms01.alicdn.com/tps/i1/T1xUprFz8nXXcqEkHX-550-1836.png) no-repeat 335px -389px; }
+.detail-status .avil .time-banner { background: #FFF4F6; }
+.detail-status .main-box .time-banner { width: 469px; height: 42px; line-height: 42px; margin-left: -8px; position: relative; font-size: 12px; }
+.detail-status .main-box .time-banner .ju-spltimer { display: inline-block; background: url(http://gtms04.alicdn.com/tps/i4/T1naqRXdxoXXcu5FDa-17-17.png) no-repeat left center; padding-left: 23px; }
+.detail-status .main-box .numOfPeople { height: 54px; line-height: 54px; font-size: 14px; }
+.detail-status .main-box .numOfPeople .num { color: #D51938; font-size: 20px; font-weight: 700; font-family: Arial; margin-right: 4px; }
+.detail-status .main-box .buy { display: inline-block;  height: 30px; line-height: 30px; font-size: 14px; width: 100px; border-radius: 5px;  margin: 5px 0 0 30px; background: #d81233; font-weight: bold; color: #fff; }
+.detail-status .main-box .buy  a{ color: #fff;}
+.detail-status .operation { position: relative; border-top: 1px dashed #959595; margin-left: 8px; line-height: 56px; _padding-top: 15px; }
+.detail-status .operation a { color: #676767; cursor: pointer; }
+.detail-status .operation .share-box { display: inline-block; position: relative; }
+.detail-status .operation .share { background: url(/statics/images/T1xUprFz8nXXcqEkHX-550-1836.png) no-repeat -530px -1372px; }
+.detail-status .operation .jucollect { background: url(http://gtms01.alicdn.com/tps/i1/T1XVZ4FbheXXcu5FDa-20-17.png) no-repeat 0 center; }
+.ju-spltimer { line-height: 36px;}
+.ju-spltimer span{display:inline;font:400 20px Verdana;color:#333;}
+.sell_end { position: absolute; top: -80px; left: 0px; }
+
+.mslbgz{width: 840px; margin: 0 auto; background: #f8f8f8;  margin-top: 20px;}
+.hgxqymiaoshu ul li{ line-height: 30px; font-size: 18px; margin-left: 20px; padding-top: 13px; color: #f00; }
+.hgxqymiaoshu ul li a{ color: #0000FF;	text-decoration: underline;}
+.msgzbt{color:#fff; font-size:22px; font-weight:bold; background:#CC0000; padding: 10px;}
+.invite_copy{font-size:16px; float:left; text-align:left;	border-top-width: 1px;	border-top-style: dashed;	border-top-color: #E0E0E0; margin-top: 10px; padding-top: 10px;}
+.invite_copy span{ color: #f00; font-weight: bold;}
+.fxcp textarea{ font-size: 14px;  width: 770px; padding: 10px; line-height: 20px; margin-top: 10px; background: #f8f8f8; border: 1px solid #eee;}

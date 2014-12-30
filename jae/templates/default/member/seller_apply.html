@@ -1,0 +1,49 @@
+<?php  
+include template('content','head');
+?>
+<link href="/statics/css/table_form.css" rel="stylesheet" type="text/css" />
+<div class="blank"></div>
+<div class="wrap">
+  <dl class="ui-tab clearfix" id="">
+    <dt>我的店铺资料</dt>
+  </dl>
+  <div class="border">
+    <div class="pd20">
+      <div class="content"><!-- point .summary END --> 
+        <?php echo $msg?>
+        <form method="post" >
+          <table class="table_form" cellpadding="0" cellspacing="0" border="0">
+            <tbody>
+              <tr>
+                <th width="140">店铺名称:</th>
+                <td><input class=input-text style="width:95%;" type="text" name="info[shop_title]" value="<?php echo $shop_title?>" size="80"></td>
+              </tr>
+              <tr>
+                <th>店铺链接地址:</th>
+                <td><input class=input-text style="width:95%;" type="text" name="info[shop_url]"  value="<?php echo $shop_url?>"  size="80"></td>
+              </tr>
+              <tr>
+                <th>店铺简介:</th>
+                <td>
+                <textarea  class=input-text name="info[shop_profile]" style="width:95%;"  ><?php echo $shop_profile?></textarea>
+                
+                </td>
+              </tr>
+           
+             
+                <th colspan="2" style="text-align:center;vertical-align:middle;"> <input class="button" name="dopost" type="submit" value="提交"> 
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+        
+        <!-- point .detail END --></div>
+      <div class="blank"></div>
+      <div class="m_main"> </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+</div>
+<div class="blank"></div>

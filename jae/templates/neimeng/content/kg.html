@@ -1,0 +1,364 @@
+<link href="/statics/css/kg.css" rel="stylesheet" />
+<?php $siteinfo=siteinfo(SITEID);  $site_setting=string2array($siteinfo['setting']); ?>
+<cajamodules include="kissy/1.3.0/core,kissy/gallery/datalazyload/1.0/index" />
+<script src="/assets/javascripts/datalazyload.js"></script>
+<div class="top"><div class="wrap">
+  <div class="logo">
+  <img class="J_TWidget" width="231" height="70" src="<?php echo $site_setting['head_logo'] ?>"
+     data-widget-type="Compatible" data-widget-config="{'png':true,'png_tag':true}"/>
+	 <?php $result=query('SELECT * FROM jae_weblink WHERE typeid=21 ORDER BY listorder,id ASC  LIMIT 0,1 '); 
+		foreach ($result as $v) {   if(!empty($v['picture'])){   
+		?><a target="_blank" href="<?php echo $v['link'];?>"><img width="130" height="50" src="<?php echo $v['picture'];?>"></a>
+		<?php } }
+		?>	
+</div>
+<div class="nav">
+<a class="mm-home cur nav" href="/index.php">首页</a>
+<a class="mm-freebie nav" href="http://list.taobao.com/market/food2011.htm?spm=0.0.0.0.6v2AR6&cat=50108542%2C50035978%2C50002766%2C50103280%2C50008825%2C50103282%2C&fsarea=1150000:2&viewIndex=1&fslpid=&userKeywordJudge=false&yp4p_page=1&product15=true&changeview=grid&changeArea=true&atype=b&pcat=techan&q=%CC%D8%B2%FA&ppath=&isnew=2&fmarket=1&changeArea=true&changeview=grid" target="_blank">特产大全</a></div></div></div>
+<a name="top"></a>
+<div class="kg">
+<div class="side_nav">
+<div class="c_head"></div>
+<div class="iconfont"><a href="#first">一元拍卖</a></div>
+<div class="iconfont"><a href="#second">重磅推荐</a></div>
+<div class="iconfont"><a href="#third">一元秒杀</a></div>
+<div class="iconfont"><a href="#fourth">9.9专区</a></div>
+<div class="iconfont"><a href="#fifth">无肉不欢</a></div>
+<div class="iconfont"><a href="#sixth">奶乳飘香</a></div>
+<div class="iconfont"><a href="#seven">珍味特产</a></div>
+<div class="iconfont"><a href="#nineth ">天堂草原</a></div>
+<div class="iconfont"><a href="#top ">TOP</a></div>
+<div class="c_bottom"></div>
+
+</div>
+<div style="width:900px; height:460px; margin:0 auto; position:relative;">
+<embed width="285" height="220" style="margin:0px;float:none; position:absolute; top:95px; left:650px;" wmode="transparent" pluginspage="http://www.macromedia.com/go/getflashplayer" quality="high" allowfullscreen="true" src="http://cloud.video.taobao.com/play/u/681831631/p/2/e/1/t/3/11342103.swf" type="application/x-shockwave-flash" allowscriptaccess="never" flashvars="scene=taobao_shop" allowNetworking="internal"></embed>
+</div><a name="first"></a>
+<div class="main"><div class="prz"><?php echo block(34)?></div>
+
+
+	  	<?php $result=query('SELECT * FROM jae_goods WHERE promote_id=73  AND '.SYS_TIME.' > begin_time  AND  '.SYS_TIME.'< end_time  ORDER BY listorder,id ASC  LIMIT 0,1 '); 
+		foreach ($result as $v) {
+		?><a target="_blank" href="<?php echo $v['detail_url'];?>" style="opacity:1;">
+<img data-ks-lazyload="<?php echo $v['pic_url']?>"></a>
+		<?php }
+		?>	
+
+</div>
+<a name="second"></a>
+<div class=" recommend"><!--<div class="lic"><img class="J_TWidget" data-ks-lazyload="http://img01.taobaocdn.com/imgextra/i1/1863579612/T27WDGXA8XXXXXXXXX-1863579612.png" data-widget-type="Compatible" data-widget-config="{'png':true,'png_tag':true}"/></div>
+<div class="ric"><img class="J_TWidget" data-ks-lazyload="http://img03.taobaocdn.com/imgextra/i3/1863579612/T2P6_GXv0XXXXXXXXX-1863579612.png" data-widget-type="Compatible" data-widget-config="{'png':true,'png_tag':true}"/></div>-->
+<div class="tit"><img class="J_TWidget" data-ks-lazyload="http://img02.taobaocdn.com/imgextra/i2/1863579612/T2KDPFXERXXXXXXXXX-1863579612.png" data-widget-type="Compatible" data-widget-config="{'png':true,'png_tag':true}"/> </div>
+
+<div class="cnt">
+	  	<?php $result=query('SELECT * FROM jae_weblink WHERE typeid=28 ORDER BY listorder,id ASC  LIMIT 1,3 '); 
+		foreach ($result as $v) {
+		?><a target="_blank" href="<?php echo $v['link'];?>" style="opacity:1;"><img style="display:block" data-ks-lazyload="<?php echo $v['picture'];?>"></a>
+		<?php }
+		?>	
+		<?php echo block(35);?>
+</div>
+
+</div>
+<div class="blank10"></div>
+<a name="third"></a>
+<div class="jiujiu"><div class="lic" style="left:-40px;"><img class="J_TWidget" data-ks-lazyload="http://img01.taobaocdn.com/imgextra/i1/1863579612/T2G3bFXvJaXXXXXXXX-1863579612.png" data-widget-type="Compatible" data-widget-config="{'png':true,'png_tag':true}"/></div>
+<div class="tit"><img  data-ks-lazyload="http://img04.taobaocdn.com/imgextra/i4/1863579612/T2pFrOXq4XXXXXXXXX-1863579612.jpg"/> </div>
+
+
+<div class="sec" >
+                
+                <div id="J_MallSlide" class="mc J_TWidget"   data-widget-type="Carousel" data-widget-config="{'navCls':'ks-switchable-nav','contentCls':'ks-switchable-content','effect': 'fade',
+'easing': 'easeOutStrong', 'steps':1,'activeIndex':<?php if(date('H',SYS_TIME)<=9 ) {echo 0;} elseif (date('H',SYS_TIME)>=10 && date('H',SYS_TIME)<=15 ){ echo 1;} else {echo 2;}?>, 'viewSize': [990], 'circular': false, 
+'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable','triggerType':'click'}">
+
+
+                    <!-- 时间tab -->
+                    <div class="sk-tab" >
+                        <i class="line"></i>
+
+                        <div class="sk-tab-item ks-switchable-nav">
+                            <a href="javascript:void(0)" class="left ui-switchable-item killing <?php if (date('H',SYS_TIME)<=9 ) echo "ks-active"?>">
+                                <b></b>
+                                <span>早场9:00</span>
+                            </a>
+                            <a href="javascript:void(0)" class="center ui-switchable-item   <?php if (date('H',SYS_TIME)>=10 && date('H',SYS_TIME)<=15  ) echo "ks-active"?>">
+                                <b></b>
+                                <span>午场15:00</span>
+                            </a>
+                            <a href="javascript:void(0)" class="right ui-switchable-item   <?php if (date('H',SYS_TIME)>15 ) echo "ks-active"?>" style="top:43px; ">
+                                <b></b>
+                                <span>晚场20:00</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- 时间tab end -->
+                    <div class="sk-con ks-switchable-content">
+
+                        <div class="sk-item ui-switchable-panel morning ">
+                           
+                            <ul class="clearfix">
+                       
+							
+		<?php $result=query('select * from jae_seckill where '.SYS_TIME.' > begin_time  AND  '.SYS_TIME.'< end_time limit 0,4 ' );
+		foreach( $result as $r){ ?>
+			  <li><div class="p-img">
+			<a href="<?php echo $r['detail_url'];?>" title="<?php echo $r['title'];?>" target="_blank"><img width="180" height="180" alt="<?php echo $r['title'];?>" data-ks-lazyload="<?php echo $r['pic_url'];?>"></a></div><div class="p-name"><a href="<?php echo $r['detail_url'];?>" target="_blank"><?php echo str_cut($r['title'],13,'');?></a></div><div class="p-price"><strong>￥1</strong><span>元</span><del>原价：<?php echo round($r['price'],1);?>元</del></div><div class="p-btn"><a class="btn-m seckilling" href="<?php echo $r['detail_url'];?>" target="_blank">立即秒杀</a></div></li>
+					<?php }?>
+
+                            </ul>
+                        </div>
+						
+                        <div class="sk-item ui-switchable-panel noon  " style="background:none;">
+                            
+                            <ul class="clearfix">
+                             
+		<?php $result=query('select * from jae_seckill where '.SYS_TIME.' > begin_time  AND  '.SYS_TIME.'< end_time limit 4,4 ' );
+		foreach( $result as $r){ ?>
+			  <li><div class="p-img">
+			<a href="<?php echo $r['detail_url'];?>" title="<?php echo $r['title'];?>" target="_blank"><img width="180" height="180" alt="<?php echo $r['title'];?>" data-ks-lazyload="<?php echo $r['pic_url'];?>"></a></div><div class="p-name"><a href="<?php echo $r['detail_url'];?>" target="_blank"><?php echo str_cut($r['title'],13,'');?></a></div><div class="p-price"><strong>￥1</strong><span>元</span><del>原价：<?php echo round($r['price'],1);?>元</del></div><div class="p-btn"><a class="btn-m seckilling" href="<?php echo $r['detail_url'];?>" target="_blank">立即秒杀</a></div></li>
+           
+					<?php }?>
+
+                            </ul>
+                        </div>
+                        <div class="sk-item ui-switchable-panel night" style="background:none;">
+                         
+                            <ul class="clearfix">
+                             
+		<?php $result=query('select * from jae_seckill where '.SYS_TIME.' > begin_time  AND  '.SYS_TIME.'< end_time limit 8,4 ' );
+		foreach( $result as $r){ ?>
+			 <li><div class="p-img">
+			<a href="<?php echo $r['detail_url'];?>" title="<?php echo $r['title'];?>" target="_blank"><img width="180" height="180" alt="<?php echo $r['title'];?>" data-ks-lazyload="<?php echo $r['pic_url'];?>"></a></div><div class="p-name"><a href="<?php echo $r['detail_url'];?>" target="_blank"><?php echo str_cut($r['title'],13,'');?></a></div><div class="p-price"><strong>￥1</strong><span>元</span><del>原价：<?php echo round($r['price'],1);?>元</del></div><div class="p-btn"><a class="btn-m seckilling" href="<?php echo $r['detail_url'];?>" target="_blank">立即秒杀</a></div></li>
+           
+					<?php }?>
+                            
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+    <div class="clr" style="clear:both;"></div>
+
+</div>
+<div style="height:20px; clear:both;"></div>
+
+
+
+</div>
+<div class="blank10"></div>
+<a name="fourth"></a>
+<div class="jiujiu"><!--<div class="lic"><img class="J_TWidget" data-ks-lazyload="http://img02.taobaocdn.com/imgextra/i2/1863579612/T2Cf6FXtRaXXXXXXXX-1863579612.png" data-widget-config="{'png':true,'png_tag':true}"/></div>
+<div class="ric"><img class="J_TWidget" data-ks-lazyload="http://img01.taobaocdn.com/imgextra/i1/1863579612/T2D5PGXxtXXXXXXXXX-1863579612.png" data-widget-config="{'png':true,'png_tag':true}"/></div>-->
+<div class="tit"><img class="J_TWidget" data-ks-lazyload="http://img03.taobaocdn.com/imgextra/i3/1863579612/T2CeHGXAXXXXXXXXXX-1863579612.png" data-widget-config="{'png':true,'png_tag':true}"/> </div>
+<div class="cnt">
+<ul>
+<?php $result=get_goods_asc(69,8);foreach( $result as $r){ ?>
+														<li><div class="img">
+                                        <a href="<?php echo $r['detail_url'];?>" title="<?php echo $r['title'];?>" target="_blank">
+                                            <img alt="<?php echo $r['title'];?>" data-ks-lazyload="<?php echo $r['pic_url'];?>_220x220.jpg">
+                                        </a>
+                                    </div>
+									<div class="t"><a href="<?php echo $r['detail_url'];?>" target="_blank"><?php echo str_cut($r['title'],13,'');?></a></div>
+<div class="c"><a href="<?php echo $r['detail_url'];?>" target="_blank"><div class="c_price"><span>9.9</span>元</div><div class="price">原价:<?php echo round($r['price'],1);?>元</div></a><div class="buy"><a href="<?php echo $r['detail_url'];?>" target="_blank">立即抢购</a></div></div>
+</li>
+					<?php }?>
+</ul>
+<div class="clear"></div>
+</div>
+
+</div>
+<a name="fifth"></a>
+<div class="blank10"></div>
+<div class="floor f_bg1">
+<div class="floor_head tit1">
+<div class="flic"> <img class="J_TWidget" data-ks-lazyload="http://img04.taobaocdn.com/imgextra/i4/1863579612/T2N4YFXsFaXXXXXXXX-1863579612.png" data-widget-config="{'png':true,'png_tag':true}"/></div>
+<div class="spu">
+
+	  	<?php $result=query('SELECT * FROM jae_weblink WHERE typeid=28 ORDER BY listorder,id ASC  LIMIT 5,5 '); 
+		foreach ($result as $v) {
+		?><a target="_blank" href="<?php echo $v['link'];?>"><?php echo $v['title'];?></a>
+		<?php }
+		?>	
+        	  	<?php $result=query('SELECT * FROM jae_weblink WHERE typeid=28 ORDER BY listorder,id ASC  LIMIT 24,1 '); 
+		foreach ($result as $v) {
+		?><a target="_blank" href="<?php echo $v['link'];?>"><?php echo $v['title'];?></a>
+		<?php }
+		?>	
+
+</div>
+</div>
+<div class="p_list">
+<ul>
+
+<?php $result=get_goods_asc(70,12);foreach( $result as $r){ ?>
+
+<li><div class="img">
+                                        <a href="<?php echo $r['detail_url'];?>" title="<?php echo $r['title'];?>" target="_blank">
+                                            <img alt="<?php echo $r['title'];?>" data-ks-lazyload="<?php echo $r['pic_url'];?>_240x240.jpg">
+                                        </a></div>
+<div class="t"><a href="<?php echo $r['detail_url'];?>" target="_blank"><?php echo str_cut($r['title'],13,'');?></a></div>
+
+<div class="c"><a href="<?php echo $r['detail_url'];?>" target="_blank"><div class="price">原价：<?php echo round($r['price'],1);?>元</div><div class="c_price">促销价：￥<span><?php echo round($r['coupon_price'],1);?></span>元</div></a></div><div class="buy"><a href="<?php echo $r['detail_url'];?>" target="_blank">立即<br>抢购</a></div><div class="clear"></div>
+<div class="in_shop"><a href="<?php echo $r['shop_url'];?>" target="_blank">进入店铺</a></div>
+</li>
+
+					<?php }?>
+
+</ul>
+<div class="clear"></div>
+</div>
+
+</div>
+<a name="sixth"></a>
+<div class="blank10"></div>
+<div class="floor f_bg2">
+<div class="floor_head tit2">
+<div class="flic"> <img class="J_TWidget" data-ks-lazyload="http://img02.taobaocdn.com/imgextra/i2/1863579612/T2BNfFXs4aXXXXXXXX-1863579612.png" data-widget-config="{'png':true,'png_tag':true}"/></div>
+<div class="spu">
+	  	<?php $result=query('SELECT * FROM jae_weblink WHERE typeid=28 ORDER BY listorder,id ASC  LIMIT 10,5 '); 
+		foreach ($result as $v) {
+		?><a target="_blank" href="<?php echo $v['link'];?>"><?php echo $v['title'];?></a>
+		<?php }
+		?>	
+
+</div>
+</div>
+<div class="p_list">
+<ul>
+
+
+<?php $result=get_goods_asc(71,12);foreach( $result as $r){ ?>
+
+<li><div class="img">
+                                        <a href="<?php echo $r['detail_url'];?>" title="<?php echo $r['title'];?>" target="_blank">
+                                            <img alt="<?php echo $r['title'];?>" data-ks-lazyload="<?php echo $r['pic_url'];?>_240x240.jpg">
+                                        </a></div>
+<div class="t"><a href="<?php echo $r['detail_url'];?>" target="_blank"><?php echo str_cut($r['title'],13,'');?></a></div>
+
+<div class="c"><a href="<?php echo $r['detail_url'];?>" target="_blank"><div class="price">原价：<?php echo round($r['price'],1);?>元</div><div class="c_price">促销价：￥<span><?php echo round($r['coupon_price'],1);?></span>元</div></a></div><div class="buy"><a href="<?php echo $r['detail_url'];?>" target="_blank">立即<br>抢购</a></div><div class="clear"></div>
+<div class="in_shop"><a href="<?php echo $r['shop_url'];?>" target="_blank">进入店铺</a></div>
+</li>
+
+					<?php }?>
+
+
+</ul>
+<div class="clear"></div>
+</div>
+
+</div>
+<a name="seven"></a>
+<div class="blank10"></div>
+<div class="floor f_bg3">
+<div class="floor_head tit3">
+<div class="flic"> <img class="J_TWidget" data-ks-lazyload="http://img01.taobaocdn.com/imgextra/i1/1863579612/T2svTFXt4aXXXXXXXX-1863579612.png" data-widget-config="{'png':true,'png_tag':true}"/></div>
+<div class="spu">
+	  	<?php $result=query('SELECT * FROM jae_weblink WHERE typeid=28 ORDER BY listorder,id ASC  LIMIT 15,5 '); 
+		foreach ($result as $v) {
+		?><a target="_blank" href="<?php echo $v['link'];?>"><?php echo $v['title'];?></a>
+		<?php }
+		?>	
+
+</div>
+</div>
+<div class="p_list">
+<ul>
+
+
+<?php $result=get_goods_asc(72,8);foreach( $result as $r){ ?>
+
+<li><div class="img">
+                                        <a href="<?php echo $r['detail_url'];?>" title="<?php echo $r['title'];?>" target="_blank">
+                                            <img alt="<?php echo $r['title'];?>" data-ks-lazyload="<?php echo $r['pic_url'];?>_240x240.jpg">
+                                        </a></div>
+<div class="t"><a href="<?php echo $r['detail_url'];?>" target="_blank"><?php echo str_cut($r['title'],13,'');?></a></div>
+
+<div class="c"><a href="<?php echo $r['detail_url'];?>" target="_blank"><div class="price">原价：<?php echo round($r['price'],1);?>元</div><div class="c_price">促销价：￥<span><?php echo round($r['coupon_price'],1);?></span>元</div></a></div><div class="buy"><a href="<?php echo $r['detail_url'];?>" target="_blank">立即<br>抢购</a></div><div class="clear"></div>
+<div class="in_shop"><a href="<?php echo $r['shop_url'];?>" target="_blank">进入店铺</a></div>
+</li>
+
+					<?php }?>
+</ul>
+<div class="clear"></div>
+</div>
+
+</div>
+<a name="nineth"></a>
+<div class="blank10"></div>
+<div class="floor f_bg4">
+<div class="floor_head tit4">
+<div class="flic"> <img class="J_TWidget" data-ks-lazyload="http://img01.taobaocdn.com/imgextra/i1/1863579612/T2LxYGXw4XXXXXXXXX-1863579612.png" data-widget-config="{'png':true,'png_tag':true}"/></div>
+</div>
+<div class="ly_list">
+<ul>
+	  	<?php $result=query('SELECT * FROM jae_weblink WHERE typeid=28 ORDER BY listorder,id ASC  LIMIT 20,4 '); 
+		foreach ($result as $v) {
+		?><li><a target="_blank" href="<?php echo $v['link'];?>"><img data-ks-lazyload="<?php echo $v['picture'];?>"></a></li>
+		<?php }
+		?>	
+</ul>
+<div class="clear"></div>
+</div>
+
+</div>
+
+
+<div class="sw">
+  		<?php $result=query('SELECT * FROM jae_weblink WHERE typeid=21 ORDER BY listorder,id ASC  LIMIT 6,3 '); 
+		foreach ($result as $v) {   if(!empty($v['picture'])){     
+		?><div class="blank10"></div><a target="_blank" href="<?php echo $v['link'];?>"><img width="990" data-ks-lazyload="<?php echo $v['picture'];?>"></a><div style="height:5px; clear:both;"></div>
+		<?php  } }
+		?>	
+</div>
+<div class="blank10"></div>
+		<!-- 友链 -->
+		<div class="sw">
+			<div class="slink" >
+						<?php $result=query('SELECT * FROM jae_link WHERE typeid=0 ORDER BY listorder ASC   LIMIT 0,50 '); 
+		foreach ($result as $v) {
+		?><a target="_blank" href="<?php echo $v['url'];?>" title="<?php echo $v['name'];?>"><img data-ks-lazyload="<?php echo $v['logo'];?>"></a>
+		<?php }
+		?>	
+        <div class="clear"></div>
+				 </div>
+		</div>
+		<!-- 友链 end-->
+</div>
+<!--
+<div class="wrap">
+<div class="sec">
+<a href="http://neimenggu.china.taobao.com/index.php?spm=a216r.7173997.1.15.cSK9Dn&m=seckill&c=index&a=init"  target="_blank">
+<?php $hour=Date('Hs',SYS_TIME);  ?>
+<div class="time <?php if (800<$hour && $hour<=1000 ){ echo "current";}?> ">
+<span><?php if (800<$hour && $hour<=1000 ){ echo "秒杀开始";} elseif($hour>=1000){ echo "秒杀结束";} elseif ($hour<800) {echo "即将开始"} ?></span>
+<i>10:00</i>
+</div>
+<div class="time <?php if (1000<$hour && $hour<=1200 ){ echo "current";}?> ">
+<span><?php if (1000<$hour && $hour<=1200 ){ echo "秒杀开始";}elseif ($hour >1200) { echo "秒杀结束";} elseif ($hour<1000){echo "即将开始"}  ?></span>
+<i>12:00</i>
+</div>
+<div class="time <?php if (1200<$hour && $hour<=1500 ){ echo "current";}?> ">
+<span><?php if (1200<$hour && $hour<=1500 ){ echo "秒杀开始";}elseif($hour > 1500) { echo "秒杀结束";} elseif ($hour <1200) { echo "即将开始"} ?></span>
+<i>15:00</i>
+</div>
+<div class="time <?php if ( 1500 <$hour && $hour <= 1700 ) echo 'current';?>">
+<span><?php if (1500<$hour && $hour<=1700 ){ echo "秒杀开始";}elseif( $hour >1700) { echo "秒杀结束";} elseif ($hour <1500) { echo "即将开始";}  ?></span>
+<i>17:00</i>
+</div>
+<div class="time <?php if (1700<$hour && $hour<=2000 ){ echo "current";}?> ">
+<span><?php if (1700<$hour && $hour<=2000 ){ echo "秒杀开始";}elseif($hour >2000) { echo "秒杀结束"} elseif ($hour <1700){echo "即将开始"} ?></span>
+<i>20:00</i>
+</div>
+<div class="time <?php if (2000<$hour && $hour<=2200 ){ echo "current";}?> ">
+<span><?php if (2000<$hour && $hour<=2200 ){ echo "秒杀开始";}elseif($hour >2200) { echo "秒杀结束";} elseif ( $hour<2000){echo "即将开始";} ?></span>
+<i>22:00</i>
+</div>
+
+</a>
+
+</div>
+
+</div>
+-->

@@ -1,0 +1,78 @@
+<?php
+include './../../core/front/ViewArticle.php';
+include './../layout/header.php';
+?>
+<div class="xf-layout xf-mb">
+    <div class="xf-title">
+        <div class="xf-title-wrap">
+            <h1>文章正文</h1>
+        </div>
+    </div>
+
+    <!-- 两栏布局 -->
+    <div class="xf-m622s288">
+        <div class="xf-main">
+            <div class="xf-wrap">
+                <!-- 文章正文 -->
+                <div class="xf-article">
+                    <div class="xf-article-header">
+                        <h1><?php echo $article['title']; ?></h1>
+                    </div>
+                    <div class="xf-article-cnt">
+                        <?php echo $article['content']; ?>
+                    </div>
+                </div>
+                <!-- /文章正文 -->
+
+            </div>
+        </div>
+        <div class="xf-sub">
+
+            <!-- 公告 -->
+            <div class="xf-box">
+                <div class="notice">
+                    <h2>公告</h2>
+                    <div class="cnt">
+                        <?php $adNotice = rGetAd('notice');
+                        echo $adNotice['content'];
+                        ?>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- 特价推荐 -->
+            <div class="xf-box">
+                <div class="xf-box-hd">
+                    <?php $sidePromoteGoods = rGetPromotePositionDetail('sidePromoteGoods'); ?>
+                    <h2 class="tit"><?php echo $sidePromoteGoods['title']; ?></h2>
+                    <span class="more">低价生活有惊喜</span>
+                </div>
+                <div class="xf-box-bd">
+                    <ul class="sub-glist">
+                        <?php $promoteGoodsArr =  rGetPromoteGoods('sidePromoteGoods', -1, 10);
+                        foreach($promoteGoodsArr as $promoteGoods){
+                        ?>
+                        <li>
+                            <a class="pic" target="_blank" href="<?php echo $promoteGoods['detail_url']; ?>">
+                                <img src="<?php echo $promoteGoods['pic_url']; ?>_60x60.jpg" alt="<?php echo $promoteGoods['title']; ?>"></a>
+                            <div class="cnt">
+                                <p class="tit"><a target="_blank" href="<?php echo $promoteGoods['detail_url']; ?>"><?php echo $promoteGoods['title']; ?></a></p>
+                                <div class="price">
+                                    <strong>￥<?php echo $promoteGoods['coupon_price']; ?></strong>
+                                    <span>原价: <del><?php echo $promoteGoods['price']; ?></del></span>
+                                </div>
+                            </div>
+                        </li>
+                            <?php }; ?>
+                         
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <!-- /两栏布局 -->
+</div>
+<?php include './../layout/footer.php'; ?>

@@ -1,0 +1,47 @@
+@charset "gb2312";
+/* CSS Document */
+/*toubu*/
+/*公共*/
+div { font-family: '微软雅黑'; }
+img { display: block;}
+a { color: #666; }
+.fl { float: left; }
+.wrap { width: 1210px; margin: 0 auto; }
+.body_bg{ background:url(http://img01.taobaocdn.com/imgextra/i1/2063414185/TB2yjplaXXXXXbmXpXXXXXXXXXX-2063414185.jpg);	}
+/*公共END*/
+.top {background: #F1EAE4; height: 100px;}
+.head { position: relative; width: 1190px; margin: 0 auto; }
+.head .top_right { width: 500px; height: 100px; display: none; }
+.head .logo { float: left; width: 220px; margin-top: 10px; margin-bottom: 5px; }
+.head .chandi { position: absolute; left: 350px; top: 30px; }
+.head .member_btn { position: absolute; top: 30px; right: 200px; width: 80px; padding-left: 30px; height: 30px; background: url(/statics/images/member_ic.png) 10px center no-repeat; border: 1px solid #efefef; background-color: #f7f7f7; }
+.head .member_btn .member_arrow { background: url(/statics/images/member_arrow.png) 60px center no-repeat; line-height: 30px; }
+.head .my_tool { position: relative; border: 1px solid #efefef; background-color: #f7f7f7; height: 30px; float: left; margin-right: 10px; margin-top: 30px; }
+.head .my_tool .pd5 { float: left; padding-top: 7px; padding-left: 5px; padding-right: 5px; }
+.head .my_tool .message { position: absolute; left: 20px; top: -12px; background: url(/assets/images/shual.png) no-repeat; color: #fff; text-align: center; width: 18px; }
+.head .top_point { position: absolute; top: 30px; right: 0px; background: url(/assets/images/jiantouda.png) no-repeat; width: 163px; height: 40px; line-height: 32px; }
+.head .member_point { position: absolute; left: 20px; width: 48px; text-align: center; }
+.head .member_point a { color: #c50d0e; }
+.head .member_sign { position: absolute; right: 0px; width: 90px; text-align: center; }
+.head .member_sign a { color: #fff; }
+.head .top_right { float: right; position: relative; }
+/*导航*/
+.nav_wrap { background:#5b2912; }
+.nav { width:1190px; margin:0 auto; height:36px; line-height:36px; font-size:18px; }
+.nav li { float:left; }
+.nav li a { color:#fff; display:block;padding:0 40px;}
+.nav li a:hover { text-decoration:none; background:#481701; }
+
+.member_mini_nav { display: none; position: absolute; top: -1px; right: -1px; width: 310px; border: 1px solid #E3E3E3; background: white; z-index: 99; }
+.prompt { padding: 6px 6px 6px 9px; border-bottom: 1px solid #EEE; line-height: 25px; overflow: hidden; zoom: 1; }
+.uclist { width: 310px; margin: 5px 0; overflow: hidden; }
+.uclist .fore1 { border-right: 1px solid #F1F1F1; }
+.uclist ul { width: 134px; padding: 0 10px; }
+.uclist a { display: block; height: 18px; overflow: hidden; padding: 5px; text-decoration: none; color: #005EA7; }
+.uclist a:hover { background: #eee; color: #E4393C; }
+.gundsz { background-color: #F2F2F2; width: 290px; font-size: 12px; display: block; height: 70px; }
+.gundsz ul { padding-top: 5px; }
+.gundsz ul li { float: left; width: 120px; padding-top: 10px; height: 20px; overflow: hidden; padding-left: 15px; }
+.gundsz ul li a { color: #ff535f; }
+.gundsz ul li a:hover { color: #f00; }
+/*toubu end*/

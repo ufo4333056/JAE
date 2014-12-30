@@ -1,0 +1,34 @@
+<?php include template('content','head');?>
+
+
+<!-- 商品列表开始 -->
+
+<div class="wrap">
+
+  <div class="good_list">
+    <ul>
+      <?php foreach($goodsArr as $goods){; ?>
+      <li>
+        <div class="goods-block"> <a class="pic" target="_blank" href="<?php echo $goods['detail_url']; ?>"> <img class="height-aware" width="220" height="220" src="<?php echo $goods['pic_url']; ?>">
+          <div class="cover" style="bottom: -35px; "><?php echo $goods['title']; ?></div>
+          </a>
+          <div class="bottom"> <span class="price"><?php echo $goods['coupon_price']; ?></span> <span style="color:#D0D0D0;font-size:15px;">|</span> <span class="strike-price">￥<?php echo $goods['price']; ?></span> <br>
+            <span class="cp"> 已成交 <b>30</b> 笔 </span>
+            <div class="buttons buybtn"> <a href="<?php echo $goods['detail_url']; ?>">去看看</a> </div>
+          </div>
+        </div>
+      </li>
+      <?php }?>
+    </ul>
+  </div>
+</div>
+ 
+    <!-- 列表分页 -->
+    <div class="xf-pages">
+        <ul>
+            <?php echo $key; ?>
+        </ul>
+        <i></i>
+    </div>
+
+<?php include template('content','foot');?>

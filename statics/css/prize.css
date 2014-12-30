@@ -1,0 +1,126 @@
+@charset "gb2312";
+/* CSS Document */
+
+.ui-btn-l-primary, .ui-btn-l { padding: 0 10px; display: inline-block; height: 20px; background: url(http://a.tbcdn.cn/apps/tmall/mui/btn/img/btn.png) repeat-x; color: #fff; font-size: 12px; border: 0 none; border-left: 1px solid #950b00; border-right: 1px solid #950b00; cursor: pointer; outline: 0; overflow: visible; -moz-border-radius: 2px; -khtml-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; *zoom:1
+}
+.ui-btn-l-primary { background-color: #950b00; border-color: #950b00; color: #fff }
+.ui-btn-l { background-color: #ccc; border-color: #ccc; color: #333 }
+button.ui-btn-l-primary, button.ui-btn-l {
+*border-color:black; filter: chroma(color=#000000) }
+.ui-btn-l-primary, .ui-btn-l { height: 30px; line-height: 30px; font-size: 14px; font-weight: bold }
+button.ui-btn-l-primary, button.ui-btn-l { height: 30px; *height:32px;
+line-height: 27px }
+.ui-btn-l-primary { background-position: 0 -180px }
+.ui-btn-l-primary-hover, .ui-btn-l-primary:hover { background-position: 0 -210px }
+.ui-btn-l-primary-active, .ui-btn-l-primary:active { background-position: 0 -240px }
+.ui-btn-l-primary-selected { background-position: 0 -270px }
+.ui-btn-l { background-position: 0 -480px }
+.ui-btn-l-hover, .ui-btn-l:hover { background-position: 0 -510px }
+.ui-btn-l-active, .ui-btn-l:active { background-position: 0 -540px }
+.ui-btn-l-selected { background-position: 0 -570px }
+.ui-btn-l-primary:hover, .ui-btn-l:hover { text-decoration: none }
+.ui-btn-disable { border: 1px solid #ccc; background: #f2f2f2; color: #c5c5c5; cursor: default }
+
+.content-wrap { background-color: #f4f0ee; padding-bottom: 30px }
+.mui-dialog { outline: 0 }
+.mui-dialog .mui-dialog-cat { outline: 0 }
+.dialog-content-wrap { height: 200px; text-align: center; background-color: #fff; padding-left: 20px; padding-right: 20px; position: relative }
+.dialog-content-wrap .text { font-family: 'Microsoft YaHei', SimSun; font-size: 14px }
+.dialog-content-wrap .text .use-points { color: #b10000 }
+.dialog-content-wrap .btn-wrap { padding-top: 30px }
+.dialog-content-wrap .no-tip-checkbox-wrap, .dialog-content-wrap .dialog-show-my-point { position: absolute; top: 170px; right: 15px }
+.dialog-content-wrap .no-tip-checkbox-wrap input, .dialog-content-wrap .dialog-show-my-point input { margin-right: 5px; vertical-align: middle; margin-top: 0; margin-bottom: 1px }
+.dialog-content-wrap .no-tip-checkbox-wrap a, .dialog-content-wrap .dialog-show-my-point a { color: #666 }
+.win-lottery-dialog .title, .not-win-lottery-dialog .title { font-weight: bold; color: #b10000; font-family: 'Microsoft YaHei', SimSun; font-size: 14px }
+.win-lottery-dialog .title .win-dialog-point, .not-win-lottery-dialog .title .win-dialog-point { font-size: 30px; padding: 0 4px }
+.win-lottery-dialog .tip, .not-win-lottery-dialog .tip { padding-bottom: 5px; padding-top: 5px; font-family: 'Microsoft YaHei', SimSun; font-size: 14px }
+.win-lottery-dialog .text, .not-win-lottery-dialog .text { font-size: 12px; padding-top: 10px }
+.win-lottery-dialog .btn-wrap, .not-win-lottery-dialog .btn-wrap { padding-top: 15px }
+.ui-scrolltop { display: block; position: fixed; _position: absolute; right: 10px; bottom: 50px; z-index: 9999; height: 60px; width: 60px; text-indent: -9999px; overflow: hidden; cursor: pointer; background: #000 url(http://img02.taobaocdn.com/tps/i2/T1CmWhFhRdXXX1dP6j-60-60.png) no-repeat; _background: #000 url(http://a.tbcdn.cn/apps/tmall/mui/backtop/img/backtop.png) 18px 21px no-repeat; opacity: .5; filter: alpha(opacity=50); -webkit-transition: opacity .3s ease-in, opacity .3s ease-out; -moz-transition: opacity .3s ease-in, opacity .3s ease-out; -o-transition: opacity .3s ease-in, opacity .3s ease-out; transition: opacity .3s ease-in, opacity .3s ease-out }
+.ui-scrolltop:hover { opacity: 1; filter: alpha(opacity=100); -webkit-transition: opacity .3s ease-in, opacity .3s ease-out; -moz-transition: opacity .3s ease-in, opacity .3s ease-out; -o-transition: opacity .3s ease-in, opacity .3s ease-out; transition: opacity .3s ease-in, opacity .3s ease-out }
+.lift-layer { display: block; width: 100px; height: 120px; position: fixed; _position: absolute; right: 10px; bottom: 120px; z-index: 9999; text-indent: -9999px }
+.game-wrap { height: 500px; background:url(/statics/images/cj2.png) center 0px }
+.game-content { position: relative; height: 500px; width: 990px; margin: 0 auto; background: #d71936 url(/statics/images/cj1.jpg) no-repeat }
+.period { position: absolute; width: 635px; height: 26px; text-align: left; line-height: 26px; top: 30px; right: 2px; color: #fff; font-size: 14px; }
+.period  a { color: #ffea3a ; text-decoration: underline;} 
+.info-wrap { float: left; width: 302px; height: 169px; margin-top: 237px; padding: 0 25px; overflow: hidden; position: relative }
+.info-wrap .winner-list-wrap { width: 302px; height: 144px; background-color: #d20f25; margin-top: 3px }
+.info-wrap .winner-list-wrap .title { font-size: 16px; font-weight: bold; color: #630811; padding-left: 15px; padding-top: 3px }  
+.info-wrap .winner-list-wrap .winner-list-item-wrap { height: 86px; overflow: hidden }
+.info-wrap .winner-list-wrap ul { padding-left: 15px; color: #ff92ad }
+.info-wrap .winner-list-wrap ul .winner-list-item { float: left; display: inline-block; *display:inline;
+*zoom:1;
+padding: 3px 15px 0 0; width: 128px; height: 40px }
+.info-wrap .winner-list-wrap ul .winner-list-item .prize { width: 128px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.info-wrap a.my-prize-btn { display: block; position: absolute; width: 70px; height: 14px; left: 250px; top: 120px; color: #F1E26A; text-decoration: underline }
+.my-prize-set { display: block; position: absolute; width: 170px; height: 14px; left: 40px; top: 120px; color: #F1E26A; text-decoration: underline  }
+.lottery-wrap { float: left; width: 620px; margin-top: 59px ; position: relative;}
+.lottery-content { width: 620px; height: 314px; padding-left: 14px; background-color: #d71936; position: relative }
+.lottery-content .lotty-btn { width: 371px; height: 104px; text-indent: -9999px; position: absolute; cursor: pointer; left: 124px; top: 105px; -webkit-user-select: none; -moz-user-select: none; user-select: none; background: url(/statics/images/cjbtn.png) no-repeat }
+.lottery-content .lottery-updating-btn { background: url(http://img04.taobaocdn.com/tps/i4/T1h_unFgtbXXcShYbL-371-104.png) no-repeat; cursor: default }
+.lottery-content a.lottery-pause-btn-a { position: static }
+.lottery-content .lottery-pause-btn { background: url(http://gtms01.alicdn.com/tps/i1/T13YkAFc4gXXcShYbL-371-104.png) no-repeat }
+.lottery-content .tm-prize-item { width: 123px; height: 104px; overflow: hidden; position: absolute }
+.lottery-content .tm-prize-item .prize-img { display: block; width: 123px; height: 104px }
+.lottery-content .prize-1 { left: 0; top: 0 }
+.lottery-content .prize-2 { left: 124px; top: 0 }
+.lottery-content .prize-3 { left: 248px; top: 0 }
+.lottery-content .prize-4 { left: 372px; top: 0 }
+.lottery-content .prize-5 { left: 496px; top: 0 }
+.lottery-content .prize-6 { left: 496px; top: 105px }
+.lottery-content .prize-7 { left: 496px; top: 210px }
+.lottery-content .prize-8 { left: 372px; top: 210px }
+.lottery-content .prize-9 { left: 248px; top: 210px }
+.lottery-content .prize-10 { left: 124px; top: 210px }
+.lottery-content .prize-11 { left: 0; top: 210px }
+.lottery-content .prize-12 { left: 0; top: 105px }
+.lottery-content .tm-active-item { background-color: #fff; opacity: .65; filter: alpha(opacity=65); -webkit-border-radius: 4px; -moz-border-radius: 4px; border-radius: 4px }
+.rule-wrap { width: 620px; height: 15px; padding-top: 21px }
+.rule-wrap .rule-content { color: #ffbaba; width: 422px; padding-left: 138px; font-family: SimSun }
+.rule-wrap .rule-more-btn { color: #f1e26a; text-decoration: none; margin-left: 45px; cursor: pointer }
+.rule-wrap .rule-more-btn:hover { color: #f1e26a }
+
+.floor-banner { width: 990px; height: 110px; margin: 0 auto; margin-bottom: 14px; overflow: hidden }
+
+
+
+
+.page-content .head {
+background-color: #D91B38;
+}
+ .head-logo {
+width: 990px;
+height: 200px;
+background: url(/statics/images/cj3.png) no-repeat 0 0;
+margin: 0 auto;
+}.page-content .bcontent-wrap {
+background-color: #F6F6F6;
+padding: 30px 0px;
+} .rules-content { font-size: 14px;
+width: 900px;
+margin: 0 auto;
+padding-left: 90px;
+} h1 {
+color: #D4073C;
+font: 32px/1.5 bold;
+background: url(http://img02.taobaocdn.com/tps/i4/T1IQamFfNcXXbrEn2d-155-35.png) no-repeat 0 0;
+text-indent: -9999em;
+} .rules-list {
+margin: 10px 0 0 15px;
+color: #EC1D3A;
+}
+ .rules-list li {
+list-style: square;
+padding: 0 0 15px 5px;
+}
+.page-rules .rules-list .rule {
+color: #6F6F6F;
+line-height: 1.8;
+}
+.msg{ position: absolute; width: 620px; height: 0px; z-index: 9999; background: #D71936; opacity: 0;  }
+.msg .tip{ color: #fff; text-align: center; font-size: 30px; font-family:"Microsoft" ; padding-top: 20px;}
+.msg .tip a { color: #ff0; text-decoration: underline;}
+.msg .pz_img{ height: 105px; text-align: center; padding-top: 20px;}
+.msg .pz_tit{ font-size: 24px; text-align: center; color: #fff;}
+.msg .pz_note{ font-size: 16px; text-align: center; color: #fff;}
+.msg .pz_agin  a{ display:block;font-size: 16px; text-align: center; color: #fff; width: 290px; margin: 0 auto;}

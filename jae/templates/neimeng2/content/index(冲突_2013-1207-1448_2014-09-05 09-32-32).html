@@ -1,0 +1,898 @@
+<?php include template('content','head');?>
+<link rel="stylesheet" href="/statics/css/lows.css" />
+<div class="lows-banner J_TWidget" style="display:none"  id="J_LowsBanner"  data-widget-type="Carousel" data-widget-config="{'navCls':'ks-switchable-nav','contentCls':'ks-switchable-content','effect': 'fade',
+'easing': 'easeIn','triggerType':'mouse', 'steps':1, 'viewSize': [290], 'circular': true, 'activeTriggerCls':'active','autoplay':'true','interval':3,'prevBtnCls': 'prev', 'nextBtnCls': 'next', 'disableBtnCls': 'disable' }">
+    <div class="trigger-wrap">
+        <span class="close J_LowsClose"></span>
+        <span class="prev"></span>
+        <span class="next"></span>
+        <ol class="lows-trigger ks-switchable-nav">
+            <li class="ks-switchable-trigger-internal297 active"></li>
+            <li class="ks-switchable-trigger-internal297 "></li>
+            <li class="ks-switchable-trigger-internal297"></li>
+        </ol>
+    </div>
+    <ul class="ks-switchable-content clear-fix">
+        <li class="pic1 ks-switchable-panel-internal298" style="display: block; opacity: 0; position: absolute; z-index: 1; "><div class="banner-pic" style="background: url(http://img03.taobaocdn.com/imgextra/i3/1863579612/TB2_FMOXVXXXXX7XpXXXXXXXXXX-1863579612.png) no-repeat 0 0;"></div></li>
+        <li class="pic2 ks-switchable-panel-internal298" style="display: block; opacity: 1; position: absolute; z-index: 9; "><div class="banner-pic" style="background: url(http://img04.taobaocdn.com/imgextra/i4/1863579612/TB2VhgOXVXXXXbaXXXXXXXXXXXX-1863579612.png) no-repeat 0 0;"></div></li>
+        <li class="pic3 ks-switchable-panel-internal298" style="display: block; opacity: 0; position: absolute; z-index: 1; "><div class="banner-pic" style="background: url(http://img02.taobaocdn.com/imgextra/i2/1863579612/TB2G4ZOXVXXXXXGXXXXXXXXXXXX-1863579612.png) no-repeat 0 0;"></div></li>
+    </ul>
+</div>
+
+{pc:weblink action="lists" id="185" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<div class="body_w" style="background-image:url({$r[picture]});background-repeat: repeat;">
+{/loop}
+ {/pc}	
+
+<!--首焦-->
+<div class="wrap" style="height:420px; position:relative;">
+<div class="root61" style="z-index:22">
+<div class=" smCategorys">
+                    <div class="sm-c-wrap">
+                        <div class="menu switchable-nav">
+							<div class="item fore1">
+                                <i class="i1"></i>
+                                <span class="blank"></span>
+							
+ {pc:weblink action="lists" typeid="10" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+                                <h3><a href="{$r[link]}" target="_blank">{$r[title]}</a></h3>
+								 {/loop}
+ {/pc}
+								
+								<div class="ext">
+								   {pc:weblink action="lists" typeid="10" order="listorder ASC" return="asd"}
+ {loop $asd $r}{if $n>1}
+								<a href="{$r[link]}" target="_blank">{$r[title]}</a>
+								{/if}			
+											{/loop}
+ {/pc}	
+								 </div>
+                            </div>	
+							<div class="item fore2">
+                                <i class="i2"></i>
+                                <span class="blank"></span>
+ {pc:weblink action="lists" typeid="16" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+                                <h3><a href="{$r[link]}" target="_blank">{$r[title]}</a></h3>
+								 {/loop}
+ {/pc}
+								
+								<div class="ext">
+{pc:weblink action="lists" typeid="16" order="listorder ASC" return="asd"}
+ {loop $asd $r}{if $n>1}
+								<a href="{$r[link]}" target="_blank">{$r[title]}</a>
+								{/if}			
+											{/loop}
+ {/pc}	
+								 </div>
+                            </div>	
+                            <div class="item fore3">
+                                <i class="i3"></i>
+                                <span class="blank"></span>
+ {pc:weblink action="lists" typeid="17" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+                                <h3><a href="{$r[link]}" target="_blank">{$r[title]}</a></h3>
+								 {/loop}
+ {/pc}
+								
+								<div class="ext">
+{pc:weblink action="lists" typeid="17" order="listorder ASC" return="asd"}
+ {loop $asd $r}{if $n>1}
+								<a href="{$r[link]}" target="_blank">{$r[title]}</a>
+								{/if}			
+											{/loop}
+ {/pc}	
+								 </div>
+                            </div>
+                            <div class="item fore4">
+                                <i class="i4"></i>
+                                <span class="blank"></span>
+ {pc:weblink action="lists" typeid="18" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+                                <h3><a href="{$r[link]}" target="_blank">{$r[title]}</a></h3>
+								 {/loop}
+ {/pc}
+								
+								<div class="ext">
+{pc:weblink action="lists" typeid="18" order="listorder ASC" return="asd"}
+ {loop $asd $r}{if $n>1}
+								<a href="{$r[link]}" target="_blank">{$r[title]}</a>
+								{/if}		
+											{/loop}
+ {/pc}	
+								 </div>
+                            </div>
+                            <div class="item fore5">
+                                <i class="i5"></i>
+                                <span class="blank"></span>
+ {pc:weblink action="lists" typeid="19" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+                                <h3><a href="{$r[link]}" target="_blank">{$r[title]}</a></h3>
+								 {/loop}
+ {/pc}
+								
+								<div class="ext">
+{pc:weblink action="lists" typeid="19"  order="listorder ASC " return="asd"}
+ {loop $asd $r}{if $n>1}
+								<a href="{$r[link]}" target="_blank">{$r[title]}</a>
+								{/if}			
+											{/loop}
+ {/pc}	
+								 </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+</div>
+
+
+
+</div>
+<!--shoujiao-->
+<div class="sjjz" style="position:relative; width:1210px; margin:0 auto;">
+<div class="qpsj " style="position:absolute; width:1920px; left:-355px;">
+ <div class="focus J_TWidget" data-widget-type="Slide" data-widget-config="{'navCls':'tab-nav','contentCls':'tab-content','effect': 'fade',
+'easing': 'easeIn','triggerType':'mouse', 'steps':1, 'viewSize': [1920], 'circular': true,'activeTriggerCls':'on', 'autoplay':'true','interval':3,'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable' }">
+ 	<div class="prev"></div><div class="next"></div>
+	<div class="tab-content">
+ 		<?php   $sql="SELECT * FROM jae_focus WHERE  status=1 ORDER BY listorder ASC  ";
+		
+		$r_focus=query($sql); foreach ($r_focus as $r) {?>
+       <div><a href="<?php echo $r["link"]?>" target="_blank"> <img src="{$r[picture]}" height="400"/></a></div>
+        <?php }?>
+ 	</div>
+ 	<div class="tab-nav">
+ 		 <?php $r_focuss=query($sql); foreach ($r_focuss as $k=>$rs) {?>
+          <div class="v<?php echo $k?>"></div>
+        <?php }?>
+ 	</div>
+</div>
+</div>
+</div>
+<!--shoujia end-->
+<div class="wrap">				 
+<div class="fl" style="margin-right:5px;">
+ {pc:weblink action="lists" id="170" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a href="{$r[link]}" target="_blank"><img src="{$r[picture]}" /></a>
+{/loop}
+ {/pc}
+</div>
+<div class="fl">
+ {pc:weblink action="lists" id="171" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a href="{$r[link]}" target="_blank"><img src="{$r[picture]}" /></a>
+{/loop}
+ {/pc}
+</div>
+
+<div class="fr">
+ {pc:weblink action="lists" id="172" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a href="{$r[link]}" target="_blank"><img src="{$r[picture]}" /></a>
+{/loop}
+ {/pc}
+</div>
+<div class="clear"></div>
+</div>
+<div class="blank"></div>
+<!--秒杀-->
+<div class="wrap">
+<div class="sec">
+<a href="http://neimenggu.china.taobao.com/index.php?spm=a216r.7173997.1.15.cSK9Dn&m=seckill&c=index&a=init"  target="_blank">
+<?php $hour=Date('Hs',SYS_TIME);  ?>
+<div class="time <?php if (800<$hour && $hour<=1000 ){ echo "current";}?> ">
+<span><?php if (800<$hour && $hour<=1000 ){ echo "秒杀开始";} elseif($hour>=1000){ echo "秒杀结束";} elseif ($hour<800) {echo "即将开始"} ?></span>
+<i>10:00</i>
+</div>
+<div class="time <?php if (1000<$hour && $hour<=1200 ){ echo "current";}?> ">
+<span><?php if (1000<$hour && $hour<=1200 ){ echo "秒杀开始";}elseif ($hour >1200) { echo "秒杀结束";} elseif ($hour<1000){echo "即将开始"}  ?></span>
+<i>12:00</i>
+</div>
+<div class="time <?php if (1200<$hour && $hour<=1500 ){ echo "current";}?> ">
+<span><?php if (1200<$hour && $hour<=1500 ){ echo "秒杀开始";}elseif($hour > 1500) { echo "秒杀结束";} elseif ($hour <1200) { echo "即将开始"} ?></span>
+<i>15:00</i>
+</div>
+<div class="time <?php if ( 1500 <$hour && $hour <= 1700 ) echo 'current';?>">
+<span><?php if (1500<$hour && $hour<=1700 ){ echo "秒杀开始";}elseif( $hour >1700) { echo "秒杀结束";} elseif ($hour <1500) { echo "即将开始";}  ?></span>
+<i>17:00</i>
+</div>
+<div class="time <?php if (1700<$hour && $hour<=2000 ){ echo "current";}?> ">
+<span><?php if (1700<$hour && $hour<=2000 ){ echo "秒杀开始";}elseif($hour >2000) { echo "秒杀结束"} elseif ($hour <1700){echo "即将开始"} ?></span>
+<i>20:00</i>
+</div>
+<div class="time <?php if (2000<$hour && $hour<=2200 ){ echo "current";}?> ">
+<span><?php if (2000<$hour && $hour<=2200 ){ echo "秒杀开始";}elseif($hour >2200) { echo "秒杀结束";} elseif ( $hour<2000){echo "即将开始";} ?></span>
+<i>22:00</i>
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+<!--秒杀-->
+
+
+
+<!--优质推荐-->
+<div style="height:10px;"></div>
+<div class="wrap">
+<div class="youzhi J_TWidget"   data-widget-type="Slide" data-widget-config="{'navCls':'tab-nav','contentCls':'tab-content','effect': 'fade',
+'easing': 'easeIn','triggerType':'mouse', 'steps':1, 'viewSize': [620], 'circular': true,'activeTriggerCls':'on', 'autoplay':'true','interval':3,'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable' }">
+<div class="title">
+<div class="swap tab-nav"><span>居家美食</span><span>休闲时光</span></div>
+</div>
+<div class="con tab-content">
+<div class="list ">
+            <ul>
+            {pc:content action="position"  posid="74" order="listorder asc"    num="4" }
+                                                                                                        
+               {loop $data $r}	
+		<li> <a href="<?php echo $r['url'];?>" target="_blank"><img height="280" src="<?php echo $r['thumb'];?>" width="280" /><br />
+                <div class="txt"><?php echo $r['title'];?></div>
+                <div class="sj"><span class="jg">￥<?php echo round($r['coupon_price']);?></span><span class="yj">原价：￥<?php echo $r['price'];?></span></div><span class="gm"></span></a></li>
+                        {/loop}
+                   {/pc}  
+            </ul>
+          </div><div class="list ">
+            <ul>
+            
+            {pc:content action="position"  posid="75" order="listorder asc"    num="4" }
+                                                                                                        
+               {loop $data $r}	
+		<li> <a href="<?php echo $r['url'];?>" target="_blank"><img height="280" src="<?php echo $r['thumb'];?>" width="280" /><br />
+                <div class="txt"><?php echo $r['title'];?></div>
+                <div class="sj"><span class="jg">￥<?php echo round($r['coupon_price']);?></span><span class="yj">原价：￥<?php echo $r['price'];?></span></div><span class="gm"></span></a></li>
+                        {/loop}
+                   {/pc} 
+                        
+            </ul>
+          </div>
+</div>
+<div class="bt"></div>
+</div>
+
+</div>
+<div class="blank"></div>
+        <!--banner-->
+		<div class="wrap">
+<div class="banad">
+  		 {pc:weblink action="lists" id="77" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+ <a target="_blank" href="{$r[link]}"><img width="1210" data-ks-lazyload="{$r[picture]}"></a>
+		{/loop}
+ {/pc}	
+</div>
+</div>
+<div style="height:15px; clear:both;"></div>
+<!--banner end-->
+<!--九九-->
+
+<div class="wrap">
+<div class="jiujiu">
+<div class="title">
+
+</div>
+<div class="con">
+<div class="list">
+            <ul>
+             {pc:content action="position"  posid="76" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+		<li> <a href="<?php echo $r['url'];?>" target="_blank"><img height="280" src="<?php echo $r['thumb'];?>" width="280" /><br />
+                <div class="txt"><?php echo $r['title'];?></div>
+                <div class="sj"><span class="jg">￥<?php echo round($r['coupon_price'],1);?></span><span class="yj">原价：￥<?php echo $r['price'];?></span></div><span class="gm"></span></a></li>
+                        {/loop}
+                   {/pc} 
+            </ul>
+            <div class="clear"></div>
+          </div>
+</div>
+</div>
+</div>
+<div class="blank"></div>
+<!--探寻内蒙古-->
+<div class="wrap">
+<div class="tanxun J_TWidget"  data-widget-type="Slide" data-widget-config="{'navCls':'tab-nav','contentCls':'tab-content','effect': 'fade',
+'easing': 'easeIn','triggerType':'mouse', 'steps':1, 'viewSize': [620], 'circular': true,'activeTriggerCls':'on', 'autoplay':'true','interval':3,'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable' }">
+
+
+<div class=" tab-content">
+             
+<ul class="list" >
+{pc:content action="position"  posid="77" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="78" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="79" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="80" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="81" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="82" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="83" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="84" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="85" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="86" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="87" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+<ul class="list" >
+{pc:content action="position"  posid="88" order="listorder asc"    num="6" }
+                                                                                                        
+               {loop $data $r}
+  <li><a href="<?php echo $r['url'];?>" target="_blank"><img src="<?php echo $r['thumb'];?>" width="280" height="280" border="0" /></a><br>
+    <?php echo $r['title'];?></li>
+  {/loop}
+                   {/pc} 
+</ul>
+             
+
+</div>
+
+
+
+<div class="ditu tab-nav">
+<div class="qu1">
+<span></span>
+呼伦贝尔市
+</div>
+<div class="qu2">
+<span></span>
+兴安盟
+</div>
+<div class="qu3"><span></span>
+通辽市
+</div>
+<div class="qu4"><span></span>
+赤峰市
+</div>
+<div class="qu5"><span></span>
+锡林郭勒盟
+</div>
+<div class="qu6"><span></span>
+乌兰察布市
+</div>
+<div class="qu7"><span></span>
+包头市
+</div>
+<div class="qu8"><span></span>
+呼和浩特市
+</div>
+<div class="qu9"><span></span>
+巴颜淖尔市
+</div>
+<div class="qu10"><span></span>
+鄂尔多斯市
+</div>
+<div class="qu11"><span></span>
+乌海市
+</div>
+<div class="qu12"><span></span>
+阿拉善盟
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<!--9.9包邮 -->
+
+       <div class="blank"></div>
+    <!-- 特色品类 -->     
+
+      <div class="wrap">
+      <div class="pinlei">
+     
+    <div class="li3">
+      <div class="li3_img"> 
+  		 {pc:weblink action="lists" id="106" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+ <a target="_blank" href="{$r[link]}"><img data-img="2" style="float:none;margin:0px;" width="100" height="80" data-ks-lazyload="{$r[picture]}"></a>
+		{/loop}
+ {/pc}	
+	  </div>
+      <div class="li3_t">
+      <div class="tit"><span class="t">行军粮草</span><span class="des">草原特产 正宗蒙古味道</span></div>
+        <div>{pc:block pos="shucai-1"}{/pc} </div>
+      </div>
+    </div>
+    <div class="li3">
+            <div class="li3_img"> 
+  		 {pc:weblink action="lists" id="107" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+ <a target="_blank" href="{$r[link]}"><img data-img="2" style="float:none;margin:0px;" width="100" height="80" data-ks-lazyload="{$r[picture]}"></a>
+		{/loop}
+ {/pc}	
+	  </div>
+      <div class="li3_t"><div class="tit"><span class="t">蒙古奶酪</span><span class="des">传统奶食 古法新传</span></div>
+        <div>{pc:block pos="shucai-2"}{/pc} </div>
+      </div>
+    </div>
+    <div class="li3">
+      <div class="li3_img"> 
+  		 {pc:weblink action="lists" id="108" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+ <a target="_blank" href="{$r[link]}"><img data-img="2" style="float:none;margin:0px;" width="100" height="80" data-ks-lazyload="{$r[picture]}"></a>
+		{/loop}
+ {/pc}	
+	  </div>
+      <div class="li3_t"><div class="tit"><span class="t">草原生鲜</span><span class="des">鲜牛羊肉 从草原直达餐桌</span></div>
+        <div>{pc:block pos="shucai-3"}{/pc} </div>
+      </div>
+    </div>
+    <div class="li3">
+      <div class="li3_img"> 
+  		 {pc:weblink action="lists" id="109" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+ <a target="_blank" href="{$r[link]}"><img data-img="2" style="float:none;margin:0px;" width="100" height="80" data-ks-lazyload="{$r[picture]}"></a>
+		{/loop}
+ {/pc}	
+	  </div>
+      <div class="li3_t"><div class="tit"><span class="t">米面粮油</span><span class="des">草原生态粮油 原产地直供</span></div>
+        <div>{pc:block pos="shucai-4"}{/pc} </div>
+      </div>
+    </div>
+
+      <div class="clear"></div>
+      </div>  
+      </div>
+      <div class="blank"></div>
+
+<!--1楼-->
+<div class="wrap">
+<div  class="louceng J_TWidget"   data-widget-type="Slide" data-widget-config="{'navCls':'tab-nav2','contentCls':'tab-content2','effect': 'fade',
+'easing': 'easeIn','triggerType':'mouse', 'steps':1, 'viewSize': [620], 'circular': true,'activeTriggerCls':'on', 'autoplay':'true','interval':3,'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable' }">
+<div class="title" style="background:url(http://img02.taobaocdn.com/imgextra/i2/1863579612/TB2_Dg9aXXXXXamXXXXXXXXXXXX_!!1863579612.png) no-repeat"> <div class="swap tab-nav2"><span class="on">美味零食</span><span>传统奶茶</span><span>牧场鲜奶</span></div>  </div>
+<div class="tab-content2">
+<div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="173" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="89" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc}     
+</div>
+<div class="clear"></div>
+</div>
+<div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="174" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+ </div>
+
+<div class="r_list">
+{pc:content action="position"  posid="90" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div>
+<div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="175" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="91" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="blank"></div>
+<!--2楼-->
+<div class="wrap">
+<div  class="louceng J_TWidget"   data-widget-type="Slide" data-widget-config="{'navCls':'tab-nav2','contentCls':'tab-content2','effect': 'fade',
+'easing': 'easeIn','triggerType':'mouse', 'steps':1, 'viewSize': [620], 'circular': true,'activeTriggerCls':'on', 'autoplay':'true','interval':3,'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable' }">
+<div class="title" style="background:url(http://img04.taobaocdn.com/imgextra/i4/1863579612/TB2I_s5aXXXXXX4XpXXXXXXXXXX_!!1863579612.png) no-repeat"> <div class="swap tab-nav2"><span class="on">风干牛肉</span><span>草原全羊</span><span>经典小食</span></div>  </div>
+<div class="tab-content2">
+<div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="176" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="92" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div><div class="cons ">
+<div class="l_img">{pc:weblink action="lists" id="177" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+ </div>
+
+<div class="r_list">
+{pc:content action="position"  posid="93" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div><div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="178" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="94" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="blank"></div>
+<!--3楼-->
+<div class="wrap">
+<div  class="louceng J_TWidget"   data-widget-type="Slide" data-widget-config="{'navCls':'tab-nav2','contentCls':'tab-content2','effect': 'fade',
+'easing': 'easeIn','triggerType':'mouse', 'steps':1, 'viewSize': [620], 'circular': true,'activeTriggerCls':'on', 'autoplay':'true','interval':3,'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable' }">
+<div class="title" style="background:url(http://img01.taobaocdn.com/imgextra/i1/1863579612/TB2QH78aXXXXXbJXXXXXXXXXXXX_!!1863579612.png) no-repeat"> <div class="swap tab-nav2"><span class="on">草原鲜米</span><span>精选杂粮</span><span>佐餐调味</span></div>  </div>
+<div class="tab-content2">
+<div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="179" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="95" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div><div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="180" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="96" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div><div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="181" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="97" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+</div>
+</div>
+      <div class="blank"></div>
+<!--4楼-->
+<div class="wrap">
+<div  class="louceng J_TWidget"   data-widget-type="Slide" data-widget-config="{'navCls':'tab-nav2','contentCls':'tab-content2','effect': 'fade',
+'easing': 'easeIn','triggerType':'mouse', 'steps':1, 'viewSize': [620], 'circular': true,'activeTriggerCls':'on', 'autoplay':'true','interval':3,'prevBtnCls': 'mall-prev', 'nextBtnCls': 'mall-next', 'disableBtnCls': 'disable' }">
+<div class="title" style="background:url(http://img04.taobaocdn.com/imgextra/i4/1863579612/TB2tr.9aXXXXXaEXXXXXXXXXXXX_!!1863579612.png) no-repeat"> <div class="swap tab-nav2"><span class="on">珍味特产</span><span>草原情怀</span><span>特色风味</span></div>  </div>
+<div class="tab-content2">
+<div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="182" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="98" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div><div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="183" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="99" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div><div class="cons ">
+<div class="l_img">
+{pc:weblink action="lists" id="184" num="1" order="listorder ASC" return="asd"}
+ {loop $asd $r}
+<a target="_blank" href="{$r[link]}"><img src="{$r[picture]}" width="260" height="470"></a>
+{/loop}
+ {/pc}	
+</div>
+
+<div class="r_list">
+{pc:content action="position"  posid="100" order="listorder asc"    num="10" }
+                                                                                                        
+               {loop $data $r}	
+<div class="item"><a href="<?php echo $r['url'];?>"  target="_blank">
+<div class="img">
+<img src="<?php echo $r['thumb'];?>" height="160" width="160"></div>
+<div class="tit"><?php echo $r['title'];?></div>
+<div class="cxj">热销￥<span><?php echo round($r['coupon_price'],1);?></span></div> <div class="gm">立即抢购</div>
+
+</a>
+</div>
+ {/loop}
+                   {/pc} 
+</div>
+<div class="clear"></div>
+</div>
+</div>
+
+</div>
+</div>
+       
+<div class="blank"></div>
+     
+
+		<!-- 友链 -->
+		<div class="wrap">
+			<div class="jh">
+						<?php $result=query('SELECT * FROM jae_link WHERE typeid=0 AND listorder!=0 AND passed=1 ORDER BY listorder ASC   LIMIT 0,50 '); 
+		foreach ($result as $v) {
+		?><a target="_blank" href="<?php echo $v['url'];?>" title="<?php echo $v['name'];?>"><img data-ks-lazyload="<?php echo $v['logo'];?>"></a>
+		<?php }
+		?>	
+				 </div>
+		</div>
+		<!-- 友链 end-->
+
+<div class="blank"></div>
+<?php include template('content','foot');?>
+
+</div>

@@ -1,0 +1,21 @@
+CREATE TABLE `jae_position_data` (
+	`id` MEDIUMINT(8) UNSIGNED NOT NULL DEFAULT '0',
+	`catid` SMALLINT(5) UNSIGNED NOT NULL DEFAULT '0',
+	`posid` SMALLINT(5) UNSIGNED NOT NULL DEFAULT '0',
+	`module` CHAR(20) NULL DEFAULT NULL,
+	`modelid` SMALLINT(6) UNSIGNED NULL DEFAULT '0',
+	`thumb` TINYINT(1) NOT NULL DEFAULT '0',
+	`data` MEDIUMTEXT NULL,
+	`siteid` SMALLINT(5) UNSIGNED NOT NULL DEFAULT '1',
+	`listorder` MEDIUMINT(8) NULL DEFAULT '0',
+	`expiration` INT(10) NOT NULL,
+	`extention` CHAR(30) NULL DEFAULT NULL,
+	`synedit` TINYINT(1) NULL DEFAULT '0'
+)
+COLLATE='gbk_chinese_ci'
+ENGINE=MyISAM;
+
+
+
+UPDATE jae_site SET date='20140729' ;
+UPDATE jae_site SET version='149';

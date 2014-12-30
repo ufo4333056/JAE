@@ -1,0 +1,150 @@
+@charset "gb2312";
+/* CSS Document */
+div {
+font-family: "Œ¢»Ì—≈∫⁄" ;
+}
+.wrap { width: 1210px; margin: 0 auto; }
+.logo { float: left; margin-right: 20px; }
+.top { background: #800000; height: 80px; }
+.nav a { margin-top : 25px; dispaly: block; float: left; width: 80px; height: 30px; color: #fff; font-size: 15px; text-align: center; line-height: 30px; text-decoration: none; border-radius: 5px; }
+.nav a:hover { background: #c81600; }
+.sw{ width: 990px; margin: 0 auto;}
+.clear { clear: both;}
+.blank10{ height: 10px; clear:both ;}
+a:hover{opacity:0.8;}
+
+
+
+.side_nav { position:fixed;left:50%;margin-left:525px;bottom:20px;_bottom:0px;_position:absolute; z-index: 1000; }
+.side_nav .c_head { background: url(http://img02.taobaocdn.com/imgextra/i2/1863579612/T2nNrHXqtXXXXXXXXX-1863579612.png) no-repeat; height: 50px;}
+.side_nav .c_bottom { background: url(http://img02.taobaocdn.com/imgextra/i2/1863579612/T2nNrHXqtXXXXXXXXX-1863579612.png) no-repeat 0 bottom; height: 40px;}
+.side_nav .iconfont { background:url(http://img02.taobaocdn.com/imgextra/i2/1863579612/T2pkfGXzdXXXXXXXXX-1863579612.png) no-repeat 0px bottom #00b358; color: #fff; width: 90px; text-align: center; height: 36px; line-height: 30px; }
+.side_nav .iconfont a{ color: #fff; font-size: 16px;}
+.kg { background:url(http://img01.taobaocdn.com/imgextra/i1/1863579612/T2YTfFXEJXXXXXXXXX-1863579612.jpg) #098053 no-repeat  center 0px;  position: relative;}
+
+.kg .main{ text-align:center; width:990px; height: 444px; margin:0 auto; position: relative; }
+
+.kg .main .prz { position: absolute;bottom: 60px; text-align: left; font-size: 14px; right: 10px;  width: 160px; height: 65px; z-index: 9; }
+
+.recommend { width:990px; background:url(http://img04.taobaocdn.com/imgextra/i4/1863579612/T2KtnGXAJXXXXXXXXX-1863579612.jpg); margin:0 auto; position: relative;}
+.recommend .tit{ text-align:center; padding:10px 0px;}
+.recommend .cnt { padding: 10px;}
+
+.lic {position: absolute;left: -100px;}
+.ric {position: absolute;right: -100px;}
+.price {color: #C23232; }
+.jiujiu {width:990px; background:url(http://img01.taobaocdn.com/imgextra/i1/1863579612/T2nlrGXtVXXXXXXXXX-1863579612.jpg); margin:0 auto; position: relative; }
+.jiujiu .tit{ text-align:center; padding:10px 0px;}
+.jiujiu .cnt {padding: 10px 0 0px 7px; }
+.jiujiu .cnt li { float: left; width: 220px; margin-right:5px; margin-bottom:5px;   padding:10px;  background: #fff;}
+.jiujiu .cnt .t {font-size: 16px; line-height: 32px; color: #d50338; border-bottom: 1px dashed #d50338; }
+.jiujiu .cnt .t a{color: #f06}
+.jiujiu .cnt .t a:hover{color: #f60}
+.jiujiu .c { height: 40px;}
+.jiujiu .c div { float: left; }
+.jiujiu .c .c_price{ font-size: 12px; color:#d50338; width: 60px; }
+.jiujiu .c .c_price span { font-family: 'impact'; font-size: 34px; }
+.jiujiu .c .price { color: #666; font-size: 12px; padding-top: 26px; width: 70px; text-decoration: line-through;}
+.jiujiu .c  .buy { margin-top: 10px; background: url(http://img02.taobaocdn.com/imgextra/i2/1863579612/T2gY2GXB4XXXXXXXXX-1863579612.png) no-repeat; font-size: 14px; color: #ffff00; width: 90px; height: 30px; text-align: center; line-height: 30px;}
+.jiujiu .c  .buy a{color: #ffff00; display: block; }
+.jiujiu .c  .buy a:hover { color: #fff; text-decoration: none;}
+.floor{ width: 990px; margin: 0 auto;}
+.floor_head { height: 180px; position: relative;}
+.floor .p_list { padding: 10px 0 0 7px;}
+.floor .p_list li { background: #fff; width: 240px; float:left; margin: 0 5px 5px 0;}
+.flic { position: absolute; left: -70px;}
+.spu { position: absolute; left: 580px; top: 30px; }
+.spu a{ font-size: 14px; color: #fff; border: 1px solid #fff; padding:2px 5px; margin: 5px;}
+
+
+.floor .p_list .t { padding: 5px; font-size: 16px;  }
+.floor .p_list .t a { color: #333;}
+.floor .p_list .t a:hover { color: #f06;}
+.floor .p_list .c { width: 160px; float: left; margin-left: 5px; position: relative;}  
+.floor .p_list .c  a:hover{ text-decoration: none;}
+.floor .p_list .c .price{ position: absolute;left: 0px ;top: 0px; text-decoration: line-through;}
+.floor .p_list .buy{ float: right; font-size: 16px; color: #fff; width: 75px; height: 50px;background: url(http://img04.taobaocdn.com/imgextra/i4/1863579612/T2RwPGXytXXXXXXXXX-1863579612.png) no-repeat; text-align: center; line-height: 16px; padding-top: 8px; }
+.floor .p_list  .c_price { color: #d50338; font-size: 16px;}
+.floor .p_list .buy a { color: #fff; display: block;}
+.floor .p_list .buy a:hover { color: #ff0; text-decoration: none;}
+.floor .p_list  .c_price span {font-family: 'impact'; font-size: 30px; }
+.floor .p_list .in_shop { height: 30px; line-height: 30px; background: #f38e00; text-align: center; font-size: 16px; color: #fff;}
+.floor .p_list .in_shop a {color: #fff;}
+.floor .p_list .in_shop a:hover{color: #f00; text-decoration: none;}
+
+
+.f_bg1 { background:url(http://img04.taobaocdn.com/imgextra/i4/1863579612/T20oYGXsFXXXXXXXXX-1863579612.jpg); }
+.floor .tit1  { background: url(http://img03.taobaocdn.com/imgextra/i3/1863579612/T2oQvGXvVXXXXXXXXX-1863579612.jpg) no-repeat;}
+
+.f_bg2 { background:url(http://img04.taobaocdn.com/imgextra/i4/1863579612/T2GfnGXzBXXXXXXXXX-1863579612.jpg); }
+.floor .tit2  { background: url(http://img01.taobaocdn.com/imgextra/i1/1863579612/T2fX_HXr0XXXXXXXXX-1863579612.jpg) no-repeat;}
+
+.f_bg3 { background:url(http://img03.taobaocdn.com/imgextra/i3/1863579612/T2.pfGXDVXXXXXXXXX-1863579612.jpg); }
+.floor .tit3 { background: url(http://img01.taobaocdn.com/imgextra/i1/1863579612/T2dajHXrRXXXXXXXXX-1863579612.jpg) no-repeat;}
+
+.f_bg4 { background:url(http://img04.taobaocdn.com/imgextra/i4/1863579612/T2zb_GXBlXXXXXXXXX-1863579612.jpg); }
+.floor .tit4  { background: url(http://img04.taobaocdn.com/imgextra/i4/1863579612/T2f0YFXvhaXXXXXXXX-1863579612.jpg) no-repeat;}
+
+.ly_list { padding: 10px 0 0 10px; }
+.ly_list li { width: 480px; float: left; margin-right:10px; margin-bottom:10px;   }
+
+
+.sec .mc .sk-tab .sk-tab-item a.ks-active b { background: #ff0000; box-shadow: 0 0 0 6px rgba(255,0,0,.34) }
+.sec .mc .sk-tab .sk-tab-item a.ks-active span { color: #FFF; background: #f87002 }
+
+/*√Î…±*/
+.sec { width: 990px;   }
+.sec .mc { height: 310px; position: relative; overflow: visible ; }
+.sec .mc .sk-time { position: absolute; z-index: 5; right: 164px; top: -28px }
+.sec .mc .sk-time .sk-t-text { font-family: "Œ¢»Ì—≈∫⁄"; font-size: 14px; text-align: center; height: 20px; line-height: 20px; width: 70px }
+.sec .mc .sk-time .sk-t-clock { width: 141px; position: absolute; top: -12px; left: 79px }
+.sec .mc .sk-time .sk-t-clock span, .sec .mc .sk-time .sk-t-clock i { display: inline-block; line-height: 38px; height: 38px; text-align: center; font-family: "microsoft yahei"; font-size: 24px; font-weight: 700 }
+.sec .mc .sk-time .sk-t-clock span { width: 35px; background: #666; color: #FFF; border-radius: 8px }
+.sec .mc .sk-time .sk-t-clock i { font-style: normal; width: 18px; color: #666 }
+.sec .mc .sk-tab { position: absolute; left: 495px; width: 370px; padding-top: 70px; z-index: 10; top:-150px; }
+.sec .mc .sk-tab .line { display: block; height: 3px; background: #FFF; overflow: hidden }
+.sec .mc .sk-tab .sk-clock { position: absolute; z-index: 6; left: -28px; top: 5px; width: 56px; height: 64px; background: url(/assets/images/index.supermarket.sec.clock.png) no-repeat }
+.sec .mc .sk-tab .sk-clock.morning { background-position: 0 0 }
+.sec .mc .sk-tab .sk-clock.noon { background-position: -66px 0 }
+.sec .mc .sk-tab .sk-clock.night { background-position: -132px 0 }
+.sec .mc .sk-tab .sk-tab-item a { position: absolute; z-index: 5; width: 150px; padding-top: 20px; font-family: "microsoft yahei"; font-size: 14px; color: #f00; font-weight: 700; cursor: pointer }
+.sec .mc .sk-tab .sk-tab-item a b { display: block; height: 16px; width: 16px; background: #FFF; margin: 0 auto; margin-bottom: 5px; border-radius: 10px; overflow: hidden; box-shadow: 0 0 0 4px rgba(255,255,255,.5); -webkit-transition: all .3s; -moz-transition: all .3s; -o-transition: all .3s; -ms-transition: all .3s; transition: all .3s }
+.sec .mc .sk-tab .sk-tab-item a span { display: block; height: 28px; line-height: 28px; text-align: center; border-radius: 10px; -webkit-transition: all .3s; -moz-transition: all .3s; -o-transition: all .3s; -ms-transition: all .3s; transition: all .3s }
+.sec .mc .sk-tab .sk-tab-item a span em { display: none }
+.sec .mc .sk-tab .sk-tab-item a:hover { text-decoration: none; color: #666 }
+.sec .mc .sk-tab .sk-tab-item a:hover b { box-shadow: 0 0 0 6px rgba(255,255,255,.5) }
+.sec .mc .sk-tab .sk-tab-item a.killing span em { display: inline }
+.sec .mc .sk-tab .sk-tab-item a.left { left: -75px; top: 43px }
+.sec .mc .sk-tab .sk-tab-item a.center { left: 110px; top: 43px }
+.sec .mc .sk-tab .sk-tab-item a.right { right: -75px; top: 43px }
+.sec .mc .sk-con { position: relative; width: 990px; height: 330px; overflow: hidden; top:0px; }
+.sec .mc .sk-con .sk-item { width: 100%; height: 440px ; padding-left: 7px; }
+.sec .mc .sk-con .sk-item ul { width: 990px; }
+.sec .mc .sk-con .sk-item ul li { position: relative; float: left; margin-right: 5px; width: 240px; height: 320px; background: #FFF }
+.sec .mc .sk-con .sk-item ul li .p-img {  text-align: center;  }
+.sec .mc .sk-con .sk-item ul li .p-img img { width: 240px; height: 240px;}
+.sec .mc .sk-con .sk-item ul li .p-name { padding: 0 5px;   line-height: 24px; height: 30px; overflow: hidden ;}
+.sec .mc .sk-con .sk-item ul li .p-name a { font-size: 16px ; color: #f06;  }
+.sec .mc .sk-con .sk-item ul li .p-price { padding: 0 0px;  }
+.sec .mc .sk-con .sk-item ul li .p-price span {color: #f06; font-size: 20px; margin-right: 10px ; margin-left: 5px;}
+.sec .mc .sk-con .sk-item ul li .p-price strong { font-family: 'impact','Œ¢»Ì—≈∫⁄'; font-size: 34px; color: #f06; }
+.sec .mc .sk-con .sk-item ul li .p-btn { position: absolute; right: 5px; bottom: 10px; bottom: 8px ; width: 80px; height: 26px; text-align: center; line-height:26px;background-color: #DF3133;border-radius: 2px; color: #fff;}
+.sec .mc .sk-con .sk-item ul li .p-btn a { color: #fff; font-size: 14px; font-weight: bold;}
+.sec .mc .sk-con .sk-item ul li .p-btn a:hover{color: #ff0;}
+.sec .mc .sk-con .sk-item { position: absolute; z-index: 0 }
+.sec .mc .sk-con .sk-item.selected { position: absolute }
+/**/
+
+.slink {width: 1000px;}
+.slink  a { display: inline-block; float: left; width:250px; height: 160px; overflow: hidden; }
+.slink img { width: 240px; height: 150px;}
+ .ly_list li{ position: relative;}
+ .ly_list .ly_img {width: 480px; height: 320px; overflow: hidden; position: relative; }
+ .ly_list .ly_img img{ width: 480px; height: 320px;}
+.ly_list .ly_t{ background: #fff; font-size: 16px; padding: 5px;}
+.ly_price {background:rgb(222,163,0); font-size: 14px;  color: #fff; height: 36px;  line-height: 36px; padding-left: 10px; }
+.ly_price span {color: #c00;font-size: 16px; padding: 0 10px; }
+.ly_price span  a {  color: #c00; font-family: 'impact'; font-size: 32px; }
+
+.ly_btn { position: absolute; right: 0px; bottom: 0px;}
+

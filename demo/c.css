@@ -1,0 +1,192 @@
+@charset "gb2312";
+/* CSS Document */
+
+
+.hidden{
+	display:none;
+}
+
+.first-trigger,.first-trigger1{
+	width:200px;
+	height:200px;
+	border:solid 1px red;
+	margin:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+li{
+	list-style:none;
+}
+.content{
+	width:680px;
+	border:solid 1px 
+}
+
+img{
+	border:none;
+}
+
+.mall-slide .ks-switchable-nav{
+	margin-top:140px;
+	width:460px;
+	overflow:hidden;
+	
+}
+.mall-slide .ks-switchable-nav li{
+	float:left;
+	width:130px;
+	height:50px;
+	overflow:hidden;
+	margin-right:15px;
+	border:solid 1px #FFFFFF;
+	cursor:pointer;
+}
+.mall-slide .ks-switchable-nav li.ks-active{
+	border:solid 1px red;
+}
+.mall-slide .ks-switchable-nav li img{
+	width:150px;
+	height:50px;
+}
+.mall-slide {
+    border-bottom: 1px solid #E5E5E5 !important;
+    border-left: 1px solid #D8D8D8;
+    border-right: 1px solid #D8D8D8;
+    border-top: 1px solid #D8D8D8;
+    height: 200px;
+    position: relative;
+    width: 489px;
+}
+.mall-slide .mall-prev {
+    background: url("http://a.tbcdn.cn/p/fp/2011a/assets/sprites.gif") no-repeat scroll 0 -109px transparent;
+    display: block;
+    height: 137px;
+    left: 0;
+    position: absolute;
+    width: 25px;
+}
+.mall-slide .mall-next {
+    background: url("http://a.tbcdn.cn/p/fp/2011a/assets/sprites.gif") no-repeat scroll -25px -109px transparent;
+    display: block;
+    height: 137px;
+    position: absolute;
+    right: 0;
+    width: 25px;
+}
+.mall-slide .mall-prev:hover {
+    background-position: 0 -246px;
+}
+.mall-slide .mall-next:hover {
+    background-position: -25px -246px;
+}
+.mall-slide .mall-content {
+    background: -moz-linear-gradient(center top , #ECECEC, #FFFFFF) repeat scroll 0 0 transparent;
+    height: 200px;
+    left: 25px;
+    overflow: hidden;
+    position: absolute;
+    width: 439px;
+}
+.mall-slide li.big-piclist {
+    display: block;
+    float: left;
+    height: 137px;
+    overflow: hidden;
+    width: 440px;
+}
+.mall-slide .big-piclist a {
+    display: block;
+    float: left;
+    height: 137px;
+    margin-right: 1px;
+    overflow: hidden;
+    width: 109px;
+}
+.mall-slide .big-piclist img {
+}
+.mall-slide .big-piclist a.last {
+    margin-right: 0;
+    width: 110px;
+}
+.mall-slide .sm-piclist {
+    margin-left: -1px;
+    margin-top: 0;
+}
+.bt-none {
+    border-top: 0 none !important;
+}
+.bl-none {
+    border-left: 0 none !important;
+}
+.mall-slide .sm-piclist a {
+    background-color: white;
+    border-left: 1px solid #E6E6E6;
+    border-top: 1px solid #E6E6E6;
+    display: block;
+    float: left;
+    height: 44px;
+    overflow: hidden;
+    padding-top: 1px;
+    width: 87px;
+}
+.mall-slide .sm-piclist a.last {
+}
+.mall-slide .sm-piclist a:hover {
+    border-bottom: 2px solid #B81426;
+    height: 42px;
+}
+.tb-slide {
+    border: 1px solid #D8D8D8;
+}
+.tb-slide, .tb-slide li {
+    font-size: 0;
+    height: 170px;
+    overflow: hidden;
+    width: 490px;
+}
+.main-promo .loading-s .tb-slide-list li {
+    background: url("http://img02.taobaocdn.com/tps/i2/T16WJqXaXeXXXXXXXX-32-32.gif") no-repeat scroll 50% 50% transparent;
+}
+.tb-slide-triggers {
+    bottom: 5px;
+    height: 18px;
+    padding-top: 2px;
+    position: absolute;
+    right: 5px;
+    z-index: 10;
+}
+.tb-slide-triggers li {
+    -moz-border-radius: 20px 20px 20px 20px;
+    background-color: #FFFFFF;
+    color: #DE7D4B;
+    cursor: pointer;
+    float: left;
+    font-size: 13px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 3px;
+    margin-top: -2px;
+    opacity: 0.7;
+    overflow: visible;
+    position: relative;
+    text-align: center;
+    width: 20px;
+}
+.tb-slide-triggers li.ks-active {
+    background-color: #FF6600;
+    color: #FFFFFF;
+    filter: none;
+    font-weight: bold;
+    opacity: 1;
+}

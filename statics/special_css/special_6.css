@@ -1,0 +1,18 @@
+/*右侧导航样式*/
+    .anim_nav{ max-width:120px;max-height:500px;overflow:hidden;z-index:97;}
+    .anim_nav_top{position:fixed;left:50%;margin-left:525px;bottom:60px;_bottom:0px;_position:absolute;_top:expression(documentElement.scrollTop + documentElement.clientHeight-this.offsetHeight-130);}
+    .anim_nav_bottom{position:absolute;left:50%;margin-left:525px;bottom:0px;}
+    .anim_nav_show{visibility:visible;_display:block;-webkit-transform:scale(1);-moz-transform:scale(1);-o-transform:scale(1));-ms-transform:scale(1);transform:scale(1);}
+    .left_nav{margin-left:-590px;}
+.feedback {width:120px;
+/*position: fixed;
+_position: absolute; 
+right: 10px;
+bottom: 10px;*/
+}
+.feedback a { display:block; font-family: tahoma,arial,Microsoft Yahei,宋体b8b4f53; color:#fff; text-align:center;}
+.feedback a:hover { color:#FF0;}
+.gbt { font-size:21px; color:#f00!important; line-height:21px; padding:15px 0px;}
+.ycd { padding:26px 0px; background:#ee641c;}
+.go_top { background:url(http://img02.taobaocdn.com/imgextra/i2/1089118323/T2OV5ZXLpaXXXXXXXX-1089118323.png) no-repeat center 10px #ffb400; height:100px; display:block;  border-bottom:3px solid #ff8e01;}
+.iconfont { background:#f60; padding:10px 0px;font-family: tahoma,arial,Microsoft Yahei,宋体b8b4f53; font-size:14px;}

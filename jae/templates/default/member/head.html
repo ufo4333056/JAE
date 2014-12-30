@@ -1,0 +1,31 @@
+<link href="/statics/css/member.css" rel="stylesheet" type="text/css" />
+
+<div class="vNav" >
+  <div class="wrap">
+    <div class="member_nav"> <a class="item it01 " href="/index.php?m=member&c=index&a=init"> <span class="title ">首页</span> <span class="sub">会员中心首页</span> </a> 
+     <!--  <a class="item it03" href="/index.php?m=exchange&c=index&a=init"> <span class="title">缤纷好礼</span> <span class="sub">积分换购超值商品</span> </a>  -->
+     <!--  <a class="item it04" href=""> <span class="title">超值好礼</span> <span class="sub">先兑券、再抵扣</span> </a>  -->
+      <a class="item it05  select " href="/index.php?m=prize&c=index&a=init"> <span class="title  st05 ">积分抽奖</span> <span class="sub">10积分抽大奖</span> </a>
+     <!--  <a class="item it02 "  href=""> <span class="title"> 积分秒杀</span> <span class="sub">限时限量每天开抢</span> </a> --> </div>
+    <div class="personal">
+      <div class="photo  j_userphoto " >
+        <div class="p"  style="position: relative; "> <?php echo 	'<img class="avator"  src="/_RS/user/picture?mixUserNick='.urlencode($nick,"UTF-8").'" />  ';?> </div>
+        <span class="m"></span> <a class="m mb-hide j_changeInfo" href="/index.php?m=member&c=index&a=setinfo"><b>编辑资料</b></a > 
+      <?php if ($memberinfo['groupid']==1) { ?>   <a href="/index.php?m=member&c=index&a=seller_apply" target="_blank" class="tips j_activation">成为馆内卖家享受特权<i class="a">▼</i></a> <?php }?>
+         <?php if ($memberinfo['groupid']==2 && $memberinfo['islock']==0  ) {?>   <a href="/index.php?m=member&c=index&a=seller_apply" target="_blank" style="width:40px;" class="tips j_activation">审核中<i class="a">▼</i></a> <?php }?>
+          <?php if ($memberinfo['groupid']==2 && $memberinfo['islock']==1 ) { ?>   <a href="/index.php?m=member&c=index&a=seller_apply" target="_blank" style="width:24px;" class="tips j_activation">卖家<i class="a">▼</i></a> <?php }?>
+         
+         
+         </div>
+      <div class="my">
+        <div class="info clearfix">
+          <div class="item it01"> <span>我的积分</span> <a class="j_navPointNum j_nativeHistory" href="/index.php?spm=0.0.0.0.PwH29J&m=point&c=index&a=sign&trad=all"><?php echo $memberinfo['point']?></a> <i class="b"></i> </div>
+          <div class="item it02"> <span>我的奖品</span> <a class="j_nativeHistory" href="/index.php?m=prize&c=index&a=my_prize"><?php echo get_prize_num($memberinfo['userid'])?> </a> <i class="b"></i> </div>
+          <!--<div class="item it03"> <span>我的消息</span> <a href="http://vip.tmall.com/message/tmaller"> 0 </a> </div>-->
+        </div>
+        <div class="priv"> <span class="title">特权:</span>  <?php if ($memberinfo['groupid']==2 && $memberinfo['islock']==1 ) { ?><a class="priv_icon  j_nativeHistory" href="/index.php?m=member&c=index&a=goods_apply" title="活动报名" >活动报名</a> <?php }?></div>
+      </div>
+      <!--<div class="minimy clearfix"> <span class="item it01"> <span class="title">积分</span> <a class="j_navPointNum j_nativeHistory" data-template="/point/detail/all" href="javascript:void(0);"> 807 </a> <i class="b"></i> </span> <span class="item it02"> <span class="title">优惠券</span> <a class="j_nativeHistory" data-template="/coupon/all" href="javascript:void(0);"> 11 </a> <i class="b"></i> </span> <span class="item it03"> <span class="title">消息</span> <a href="http://vip.tmall.com/message/tmaller"> 0 </a> <i class="b"></i> </span> <span class="item it04"> <span class="title">湖北馆特权</span> <a class="j_nativeHistory j_minimy_priv" data-template="/privilege/all" href="javascript:void(0);">11</a> </span> </div>-->
+    </div>
+  </div>
+</div>
