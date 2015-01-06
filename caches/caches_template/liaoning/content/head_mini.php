@@ -64,5 +64,4 @@
         $v) { ?>
         <li><a target="_blank"  href="<?php echo $v['url'] ?>"><?php echo $v['catname'] ?></a></li>
         <?php } ?>
-
-<li><a target="_blank" href="http://bangpai.taobao.com/group/thread/16110719-291333513.htm?spm=0.0.0.0.xIXcAQ">服务承诺 </a></li><li><a target="_blank" href="http://bangpai.taobao.com/group/thread/16110719-289794017.htm?spm=0.0.0.0.xIXcAQ">招商手册</a></li></ul></div></div>
+</ul></div></div>
